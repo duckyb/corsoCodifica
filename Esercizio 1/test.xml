@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    fileproject: test.xml
+    name: Duccio
+    date: 08/10/18
+-->
+<root>
+    <ciao>
+        <cc></cc>
+    </ciao>
+
+    <choice>
+        <sic> testo con errore </sic>
+        <cor> testo corretto &amp; 10 </cor>
+        <htmlCode>
+            <!-- il codice HTML non viene validato -->
+            <![CDATA[
+                <h1>Capitolo Primo</h1>
+                <h2>Sezione Seconda</h2>
+            ]]>
+        </htmlCode>
+    </choice>
+</root>

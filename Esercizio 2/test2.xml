@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    fileproject: test2.xml
+    name: Duccio
+    date: 08/10/18
+-->
+<TEI>
+    <header type="intestazione"> titolo </header>
+    <facsimile source="fonte_a"> facsimile </facsimile>
+    <testo ID="identificatore"> inizio testo <seg> segmento di </seg> testo </testo>
+</TEI>
+
+<!-- NOTE: aggiungere attributi richiesti da ciascun tag -->

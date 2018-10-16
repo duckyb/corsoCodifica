@@ -1,0 +1,209 @@
+<!-- slide 11 -->
+<xsd:schema xmlns:xsd=‘‘http://www.w3.org/2001/XMLSchema’’>
+    <xsd:element name=‘‘Employee’’>
+        <xsd:complexType>
+            <xsd:attribute name=‘‘FirstName’’/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+
+<Employee FirstName="Jacob"/>
+<!-- 13 -->
+<xsd:schema xmlns:xsd=‘‘http://www.w3.org/2001/XMLSchema’’>
+    <xsd:element name=‘‘text’’>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name=‘‘body’’/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+<!-- 18 -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name=‘‘body’’>
+        <xsd:complexType>
+            <xsd:attribute name=‘‘lang’’/>
+            <xsd:attribute name=‘‘type’’/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name=‘‘text’’>
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element ref=‘‘body’’/></xsd:element>
+            </xsd:all>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+<!-- 32 -->
+<xsd:schema xmlns:xsd=‘‘http://www.w3.org/2001/XMLSchema’’>
+    <xsd:attribute name=‘‘analysis’’ /><!-- -->
+    <xsd:element name=‘‘word’’>
+        <xsd:complexType>
+            <xsd:attribute ref=‘‘analysis’’/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+<!-- 34 -->
+<xsd:attributeGroup name=‘‘EmpAttributes’’>
+    <xsd:attribute name=‘‘name’’>
+        <xsd:simpleType>
+            <xsd:restriction base=‘‘xsd:string’’>
+                <xsd:maxLength value=‘‘20’’/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name=‘‘department’’>
+        <xsd:simpleType>
+            <xsd:restriction base=‘‘xsd:string’’>
+                <xsd:length value=‘‘2’’/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+</xsd:attributeGroup>
+<!-- 35 -->
+<xsd:element name=‘‘Employees’’>
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name=‘‘Manager’’>
+                <xsd:complexType>
+                    <xsd:attributeGroup ref=‘‘EmpAttributes’’/>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name=‘‘TechLead’’>
+                <xsd:complexType>
+                    <xsd:attributeGroup ref=‘‘EmpAttributes’’/>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+<!-- 45 -->
+<xsd:element name=‘‘name’’>
+    <xsd:complexType>
+        <xsd:attribute name=‘‘type’’>
+            <xsd:simpleType>
+                <xsd:restriction base=‘‘xsd:string’’>
+                    <xsd:length value=‘‘15’’/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:element>
+<!-- 46 -->
+<xsd:element name=‘‘name’’>
+    <xsd:complexType>
+        <xsd:attribute name=‘‘type’’>
+            <xsd:simpleType>
+                <xsd:restriction base=‘‘xsd:string’’>
+                    <xsd:patter value=‘‘[A-Za-z]+’’/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:element>
+<!-- 62 -->
+<xsd:schema xmlns:xsd=‘‘http://www.w3.org/2001/XMLSchema’’>
+    <xsd:simpleType name=‘‘zipType’’ final=‘‘restriction union list extension’’>
+        <xsd:restriction base=‘‘xsd:integer’’>
+            <xsd:maxInclusive value=‘‘99999’’ fixed=‘‘true’’/>
+            <xsd:minInclusive value=‘‘10000’’/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
+<!-- 65 -->
+<xsd:complexType name=‘‘addressType’’>
+    <xsd:all>
+        <xsd:element name="address"/>
+        <xsd:element name="street"/>
+        <xsd:element name="settlment"/>
+        <xsd:element name="country"/>
+    </xsd:all>
+</xsd:complexType>
+<!-- 66 -->
+<xsd:element name=‘‘AddressDivision’’>
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="addressee"/>
+            <xsd:element name="address" type="addressType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+<!-- 73 -->
+<xsd:group name=‘‘fileDesc’’>
+    <xsd:sequence>
+        <xsd:element name="titleStmt"/>
+        <xsd:element name="publicationStmt"/>
+        <xsd:element name="sourceDesc" />
+    </xsd:sequence>
+</xsd:group>
+<xsd:element name=‘‘teiHeader’’>
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:group ref=‘‘fileDesc’’/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+</xsd:schema>
+<!-- 85 -->
+<xsd:complexType name=‘‘divTypeEx’’>
+    <xsd:simpleContent>
+        <xsd:extension base=‘‘divType’’>
+            <xsd:attribute name=‘‘type’’ use=‘‘required’’/>
+        </xsd:extension>
+    </xsd:simpleContent>
+</xsd:complexType>
+<!-- 87 -->
+<xsd:complexType name=‘‘RestrictedPhoneType’’>
+    <xsd:simpleContent>
+        <xsd:restriction base=‘‘PhoneType’’>
+            <xsd:pattern value="[0-9]3-[0-9]3-[0-9]4"/>
+                <xsd:attribute name=‘‘Type’’>
+                    <xsd:simpleType>
+                        <xsd:restriction base=‘‘xsd:string’’>
+                            <xsd:enumeration value="Home"/>
+                            <xsd:enumeration value="Work"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:attribute>
+            <xsd:attribute name="CallOnWeekend" type="xsd:boolean" use="prohibited"/>
+        </xsd:restriction>
+    </xsd:simpleContent>
+</xsd:complexType>
+<!-- 90 -->
+<xsd:complexType name=‘‘ExtendedPhoneType’’>
+    <xsd:simpleContent>
+        <xsd:extension base=‘‘PhoneType’’>
+            <xsd:attribute name="CallOnHolidays" type="xsd:string"/>
+        </xsd:extension>
+    </xsd:simpleContent>
+</xsd:complexType>
+<!-- 94 -->
+<xsd:element name="Contact" type="RestrictedContactType"/>
+    <xsd:complexType name=‘‘ContactType’’>
+        <xsd:sequence>
+            <xsd:element name="Phone" minOccurs="0"/>
+            <xsd:element name="Email" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="Name" />
+        <xsd:attribute name="Title"/>
+    </xsd:complexType>
+<!-- 95 -->
+<xsd:complexType name=‘‘RestrictedContactType’’>
+    <xsd:complexContent>
+        <xsd:restriction base=‘‘ContactType’’>
+            <xsd:sequence>
+                <xsd:element name=‘‘Phone’’>
+                    <xsd:simpleType>
+                        <xsd:restriction base=‘‘xsd:string’’>
+                            <xsd:pattern value="[0-9]3-[0-9]3-[0-9]4"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Title" use="prohibited"/>
+                <xsd:attribute name=‘‘Name’’ type=‘‘xsd:string’’>
+            </xsd:attribute>
+        </xsd:restriction>
+    </xsd:complexContent>
+</xsd:complexType>
+<!-- fine slides: pag. 100 -->
