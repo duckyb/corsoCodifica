@@ -55,6 +55,11 @@
                         <ref>vocabolarista</ref>
                     </xr>
                 </sense>
+                <re type="derived"> <!--inserisco le parole derivate-->
+                    <form> 
+                        <orth>lessicografia</orth>
+                    </form>
+                </re>
             </entry>
 
 
