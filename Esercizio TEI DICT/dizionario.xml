@@ -15,18 +15,17 @@
     </teiHeader>
     <text>
         <body>
+            <!-- L E S S I C O G R A F O  -->
             <entry n="1"> <!-- prima entrata del dizionario-->
                 <form type="lemma"> <!--tipo dell'entrata-->
                     <orth>lessicografo</orth> <!--ortografia-->
                     <pron notation="ipa">lessi'kografo</pron> <!--pronuncia-->
                     <syll>les|si|cò|gra|fo</syll> <!--sillabazione-->
                 </form>
-
                 <gramGrp> <!-- inserisco le informazioni grammaticali-->
                     <pos>sing</pos> <!-- persona -->
                     <gen>m.</gen> <!-- genere -->
                 </gramGrp>
-
                 <etym> dal <lang>greco</lang> <!--inserisco le informazioni etimologiche-->
                     <mentioned>λεξικογράϕος</mentioned>, composto di 
                     <mentioned> λεξικόν </mentioned> ossia
@@ -34,8 +33,6 @@
                     <mentioned>γράϕος </mentioned>  ovvero
                     <gloss>"-grafo"</gloss>
                 </etym>
-
-                <!--codifica dei 2 sensi dell'entrata-->
                 <sense n="s1">
                     <usg type="dom">(linguistica)</usg>
                     <def>chi si occupa di lessicografia</def>
@@ -62,7 +59,7 @@
                 </re>
             </entry>
 
-
+            <!-- F R E G A R E -->
             <entry n="2"> <!-- seconda entrata del dizionario-->
                 <form type="lemma"> <!--tipo dell'entrata-->
                     <orth>fregare</orth> <!--ortografia-->
@@ -126,27 +123,24 @@
                 </re>
             </entry>
 
+            <!-- D I Z I O N A R I S T A -->
             <entry n="3"> <!-- terza entrata del dizionario-->
                 <form type="lemma"> <!--tipo dell'entrata-->
                     <orth>dizionarista</orth> <!--ortografia-->
                     <pron notation="ipa">dittsjonaˈrista</pron> <!--pronuncia-->
                     <syll>di|zio|na|rì|sta</syll> <!--sillabazione-->
                 </form>
-
                 <gramGrp> <!-- inserisco le informazioni grammaticali-->
                     <pos>sing</pos> <!-- persona -->
                     <gen>m e f</gen> <!-- genere -->
                 </gramGrp>
-
                 <sense n="s1">
                     <usg type="dom">(professione)(letteratura)</usg>
                     <def>chi redige un <ref>dizionario<ref></def>
-
                     <etym> da
                         <gloss>dizionario</gloss>, ed
                         <gloss> -ista </gloss>
                     </etym>
-
                     <xr type="syn"> <!--in questo caso collega questo senso con i sinonimi di questo senso-->
                         <ref>lessicografo</ref>
                     </xr>
@@ -156,25 +150,22 @@
                 </sense>
             </entry>
 
+            <!-- V O C A B O L A R I S T A  -->
             <entry n="4"> <!-- quarta entrata del dizionario-->
                 <form type="lemma"> <!--tipo dell'entrata-->
                     <orth>vocabolarista</orth> <!--ortografia-->
                     <pron notation="ipa">vokabolaˈrista</pron> <!--pronuncia-->
                     <syll>vo|ca|bo|la|rì|sta</syll> <!--sillabazione-->
                 </form>
-
                 <gramGrp> <!-- inserisco le informazioni grammaticali-->
                     <pos>sing</pos> <!-- persona -->
                     <gen>m e f</gen> <!-- genere -->
                 </gramGrp>
-
                 <sense n="s1">
                     <def>chi compone un vocabolario</def>
-
                     <etym> da
                         <gloss>vocabolario</gloss>
                     </etym>
-
                     <xr type="syn"> <!--in questo caso collega questo senso con i sinonimi di questo senso-->
                         <ref>lessicografo</ref>
                     </xr>
