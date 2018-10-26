@@ -23,7 +23,7 @@
                 </form>
 
                 <gramGrp> <!-- inserisco le informazioni grammaticali-->
-                    <pos>s.</pos> <!-- persona -->
+                    <pos>sing</pos> <!-- persona -->
                     <gen>m.</gen> <!-- genere -->
                 </gramGrp>
 
@@ -108,17 +108,74 @@
                         <quote>Oh, tu non mi freghi!</quote>
                     </cit>
                 </sense>
-
-                <xr type="cf"> <!--inserisco le parole derivate-->
-                    <ref>fregarsi</ref>
-                    <ref>fregatura</ref>
-                    <ref>sfregare</ref>
-                </xr>
-
+                <re type="derived"> <!--inserisco le parole derivate-->
+                    <form> 
+                        <orth>fregarsi</orth>
+                    </form>
+                    <form>
+                        <orth>fregatura</orth>
+                    </form>
+                    <form>
+                        <orth>sfregare</orth>
+                    </form>
+                </re>
             </entry>
+
+            <entry n="3"> <!-- terza entrata del dizionario-->
+                <form type="lemma"> <!--tipo dell'entrata-->
+                    <orth>dizionarista</orth> <!--ortografia-->
+                    <pron notation="ipa">dittsjonaˈrista</pron> <!--pronuncia-->
+                    <syll>di|zio|na|rì|sta</syll> <!--sillabazione-->
+                </form>
+
+                <gramGrp> <!-- inserisco le informazioni grammaticali-->
+                    <pos>sing</pos> <!-- persona -->
+                    <gen>m e f</gen> <!-- genere -->
+                </gramGrp>
+
+                <sense n="s1">
+                    <usg type="dom">(professione)(letteratura)</usg>
+                    <def>chi redige un <ref>dizionario<ref></def>
+
+                    <etym> da
+                        <gloss>dizionario</gloss>, ed
+                        <gloss> -ista </gloss>
+                    </etym>
+
+                    <xr type="syn"> <!--in questo caso collega questo senso con i sinonimi di questo senso-->
+                        <ref>lessicografo</ref>
+                    </xr>
+                    <xr type="syn">
+                        <ref>vocabolarista</ref>
+                    </xr>
+                </sense>
+            </entry>
+
+            <entry n="4"> <!-- quarta entrata del dizionario-->
+                <form type="lemma"> <!--tipo dell'entrata-->
+                    <orth>vocabolarista</orth> <!--ortografia-->
+                    <pron notation="ipa">vokabolaˈrista</pron> <!--pronuncia-->
+                    <syll>vo|ca|bo|la|rì|sta</syll> <!--sillabazione-->
+                </form>
+
+                <gramGrp> <!-- inserisco le informazioni grammaticali-->
+                    <pos>sing</pos> <!-- persona -->
+                    <gen>m e f</gen> <!-- genere -->
+                </gramGrp>
+
+                <sense n="s1">
+                    <def>chi compone un vocabolario</def>
+
+                    <etym> da
+                        <gloss>vocabolario</gloss>
+                    </etym>
+
+                    <xr type="syn"> <!--in questo caso collega questo senso con i sinonimi di questo senso-->
+                        <ref>lessicografo</ref>
+                    </xr>
+                </sense>
+            </entry>
+
         </body> 
     </text>
 </TEI>
-
-<!-- esercizio1: codifica le parole "dizionarista" e "vocabolarista" prendendo le informazioni ha wikidictionary-->
-<!--esercizio2: completa la codifica a lessicografo, cioè la parte che riguarda parole derivate usando le linee guida di TEI come riferimento.-->
