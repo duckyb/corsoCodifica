@@ -3,7 +3,7 @@
         <fileDesc xml:lang="it">
             <titleStmt>
                 <title>Il mio primo dizionario</title>
-                <author>Camilla e Duccio</author>
+                <author>Duccio Breschi</author>
             </titleStmt>
             <publicationStmt>
                 <p>informazioni sulla pubblicazione</p>
@@ -23,7 +23,8 @@
                     <syll>les|si|cò|gra|fo</syll> <!--sillabazione-->
                 </form>
                 <gramGrp> <!-- inserisco le informazioni grammaticali-->
-                    <pos>sing</pos> <!-- persona -->
+                    <pos>s</pos>
+                    <numer>sing</numer> <!-- persona -->
                     <gen>m.</gen> <!-- genere -->
                 </gramGrp>
                 <etym> dal <lang>greco</lang> <!--inserisco le informazioni etimologiche-->
@@ -131,7 +132,8 @@
                     <syll>di|zio|na|rì|sta</syll> <!--sillabazione-->
                 </form>
                 <gramGrp> <!-- inserisco le informazioni grammaticali-->
-                    <pos>sing</pos> <!-- persona -->
+                    <pos>s</pos>
+                    <numer>sing</numer> <!-- persona -->
                     <gen>m e f</gen> <!-- genere -->
                 </gramGrp>
                 <sense n="s1">
@@ -158,7 +160,8 @@
                     <syll>vo|ca|bo|la|rì|sta</syll> <!--sillabazione-->
                 </form>
                 <gramGrp> <!-- inserisco le informazioni grammaticali-->
-                    <pos>sing</pos> <!-- persona -->
+                    <pos>s</pos>
+                    <numer>sing</numer> <!-- persona -->
                     <gen>m e f</gen> <!-- genere -->
                 </gramGrp>
                 <sense n="s1">
