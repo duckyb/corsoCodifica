@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="lettera">
+    <opener>
+        <dateline>
+            <name type="place">Pisa</name>
+            <date>20 marzo 2015</date>
+        </dateline>
+        <salute>Gentilissima Prof.ssa Scannagatti,</salute>
+    </opener>
+    <p>sono spiacente di doverle comunicare che un'invasione di cavallette si è abbattuta sui miei quaderni incautamente lasciati in giardino, e li ha divorati interamente.</p>
+    <p>Questo purtroppo significa che non posso mostrare i compiti svolti, come sempre, con solerzia e assiduo impegno.</p>
+    <closer>
+        <salute>
+            Certo di poter contare sulla sua comprensione le porgo i miei migliori saluti
+        </salute>
+        <signed>Pierino Rossi</signed>
+    </closer>
+</div>
+
+<!--
+    Astrazione testuale → codifica delle informazioni importanti
+    Come capire quali sono quelle importanti? 
+    - Bisogna essere esperti del testo che si analizza
+    - Bisogna saper sfruttare la TEI a proprio vantaggio.
+
+    NB: Non sempre il testo deve essere all'interno di un paragrafo.
+        (es. il saluto non necessita del tag <p>
+ -->
