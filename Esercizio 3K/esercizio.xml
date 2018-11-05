@@ -42,7 +42,7 @@
         <body>
             <head>General Info About <name type="place">Hanoi</name></head>
             <div>
-                <p style="font-style: italic">
+                <p rend="italic">
                 In this section, I’m going to tell you as many random things and tips that I think you should know before visiting <name type="place">Hanoi</name>.
                 </p>
             </div>
