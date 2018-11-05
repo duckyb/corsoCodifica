@@ -39,32 +39,51 @@
     </teiHeader>
 
     <text xml:lang="en">
-    <body>
-        <head>General Info About <name type="place">Hanoi</name></head>
-        <div style="font-style: italic">
-            In this section, I’m going to tell you as many random things and tips that I think you should know before visiting <name type="place">Hanoi</name>.
-        </div>
-        <div>
-            <name type="place">Hanoi</name> is Vietnam’s capital and second largest city by population (behind <name type="place">Ho Chi Minh City</name>). It’s located in the northern part of the country, and is home to some 10 million people in the metropolitan region.
-        </div>
-        <div>
-            The city is large and spread out, but most of the activity and touristy spots are located in the Old Quarter (unlike <name type="place">LA</name> or <name type="place">Tokyo</name> where everything is spread out).   You will likely be spending most of your time in the Old Quarter, where you will find tons of cafes, restaurants, hotels, bars, lounges, markets, clubs, street food vendors, etc.  It is, without question, the “most happening place” in the city — and for this reason, you can “see” <name type="place">Hanoi</name> in 1 or 2 days (no need to spend a week there).
-        </div>
-        <div>
-            Another area of town that you may find yourself in is called Tay Ho (translated to ‘West Lake’).  It’s where all the expats in <name type="place">Hanoi</name> live, who mostly consist of English teachers. Tay Ho has all the fancy restaurants and foreign food to enjoy, so if you’re tired of eating Pho, then go here!
-        </div>
-        <div>
-            <name type="place">Hanoi</name> doesn’t have many tall buildings or a financial district in a “downtown area” — in fact, most buildings are under 5 stories tall.   If you want to see skyscrapers in <name type="place">Vietnam</name>, then head to <name type="place">Ho Chi Minh city</name>.
-        </div>
-        <div>
-            80% of vehicles in <name type="place">Hanoi</name> are motorbikes, and it will certainly overwhelm you at first. Crossing the street is like playing Frogger in real life… and it doesn’t help that there are no street lanes!!  My best piece of advice is to always walk the same pace when crossing the road, and the drivers will go around you. If you slow down or speed up, then you might be in trouble…
-        </div>
-        <div>
-            <head> People in <name type="place">Hanoi</name></head> – Most people in <name type="place">Hanoi</name> (and the Vietnamese in general) don’t speak English or speak at a very beginner level.   With the exception of workers in tourist places (i.e. hotels, restaurants, cafes) and college students, you will find the English levels lower than most countries in Asia.
-        </div>
-        <div>
-            To be honest, people in <name type="place">Hanoi</name> are quite lazy, and are usually seen chilling outside on the street curb drinking tea and spitting sunflower seeds (it’s the thing to do in <name type="place">Hanoi</name>).   Nobody seems to be in a rush, and things just happen as they happen. Hanoians love sitting in TINY chairs and tables (like preschool-sized chairs) – and it’s pretty funny the first time you see it. If you are a tall person, then you might have some issues sitting down!
-        </div>
-        <div>
-            You will find a lot of backpackers in <name type="place">Hanoi</name> (mostly Australians, Europeans and Americans), as <name type="place">Hanoi</name> has been on the rise in popularity with tourists. Most of them will be hanging around the Old Quarter or Ta Hien Street (beer street) by night  — more on that later.
-        </div>
+        <body>
+            <head>General Info About <name type="place">Hanoi</name></head>
+            <div>
+                <p style="font-style: italic">
+                In this section, I’m going to tell you as many random things and tips that I think you should know before visiting <name type="place">Hanoi</name>.
+                </p>
+            </div>
+            <div>
+                <p>
+                <name type="place">Hanoi</name> is Vietnam’s capital and second largest city by population (behind <name type="place">Ho Chi Minh City</name>). It’s located in the northern part of the country, and is home to some 10 million people in the metropolitan region.
+                </p>
+            </div>
+            <div>
+                <p>
+                The city is large and spread out, but most of the activity and touristy spots are located in the <emph rend="bold">Old Quarter</emph> (unlike <name type="place">LA</name> or <name type="place">Tokyo</name> where everything is spread out).   You will likely be spending most of your time in the Old Quarter, where you will find tons of cafes, restaurants, hotels, bars, lounges, markets, clubs, street food vendors, etc.  It is, without question, the “most happening place” in the city — and for this reason, you can “see” <name type="place">Hanoi</name> in 1 or 2 days (no need to spend a week there).
+                </p>
+            </div>
+            <div>
+                <p>
+                Another area of town that you may find yourself in is called Tay Ho (translated to ‘West Lake’).  It’s where all the expats in <name type="place">Hanoi</name> live, who mostly consist of English teachers. Tay Ho has all the fancy restaurants and foreign food to enjoy, so if you’re tired of eating Pho, then go here!
+                </p>
+            </div>
+            <div>
+                <name type="place">Hanoi</name> doesn’t have many tall buildings or a financial district in a “downtown area” — in fact, most buildings are under 5 stories tall.   If you want to see skyscrapers in <name type="place">Vietnam</name>, then head to <name type="place">Ho Chi Minh city</name>.
+            </div>
+            <div>
+                <p>
+                80% of vehicles in <name type="place">Hanoi</name> are motorbikes, and it will certainly overwhelm you at first. Crossing the street is like playing Frogger in real life… and it doesn’t help that there are no street lanes!!  My best piece of advice is to always walk the same pace when crossing the road, and the drivers will go around you. If you slow down or speed up, then you might be in trouble…
+                </p>
+            </div>
+            <div>
+                <p>
+                <head> People in <name type="place">Hanoi</name></head> – Most people in <name type="place">Hanoi</name> (and the Vietnamese in general) don’t speak English or speak at a very beginner level.   With the exception of workers in tourist places (i.e. hotels, restaurants, cafes) and college students, you will find the English levels lower than most countries in Asia.
+                </p>
+            </div>
+            <div>
+                <p>
+                To be honest, people in <name type="place">Hanoi</name> are quite lazy, and are usually seen chilling outside on the street curb drinking tea and spitting sunflower seeds (it’s the thing to do in <name type="place">Hanoi</name>).   Nobody seems to be in a rush, and things just happen as they happen. Hanoians love sitting in TINY chairs and tables (like preschool-sized chairs) – and it’s pretty funny the first time you see it. If you are a tall person, then you might have some issues sitting down!
+                </p>
+            </div>
+            <div>
+                <p>
+                You will find a lot of backpackers in <name type="place">Hanoi</name> (mostly Australians, Europeans and Americans), as <name type="place">Hanoi</name> has been on the rise in popularity with tourists. Most of them will be hanging around the Old Quarter or Ta Hien Street (beer street) by night  — more on that later.
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
