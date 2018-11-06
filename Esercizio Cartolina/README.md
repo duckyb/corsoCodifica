@@ -2,4 +2,4 @@
 
 |fronte|retro|
 | --- | --- |
-| ![fronte cartolina](fronte.jpg) | ![retro cartolina](retro.jpg)
+| ![fronte cartolina](fronte.jpg) | ![retro cartolina](retro.jpg) |
