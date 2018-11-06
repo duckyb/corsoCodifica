@@ -1,5 +1,16 @@
 # Codifica digitale di una cartolina
 
-|fronte|retro|
+|retro|fronte|
 | --- | --- |
-| ![fronte cartolina](fronte.jpg) | ![retro cartolina](retro.jpg) |
+| ![retro cartolina](retro.jpg) | ![fronte cartolina](fronte.jpg) |
+
+## Testi:
+
+CAPO D'ARMI (Rc)
+La spiaggia
+La plage
+The beach
+Der Strand
+
+213 Ediz. Polimeno Pietro - Via del Gatto 2
+                            Reggio Calabria
