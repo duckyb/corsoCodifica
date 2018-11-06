@@ -1,4 +1,4 @@
-# Codifica digitale di una cartolina
+# Cartolina Lazzaro 1983
 
 |retro|fronte|
 | --- | --- |
