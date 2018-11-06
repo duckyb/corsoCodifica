@@ -1,2 +1,5 @@
 # Codifica digitale di una cartolina
-![fronte cartolina](fronte.jpg)
+
+|fronte|retro|
+| --- | --- |
+| ![fronte cartolina](fronte.jpg) | ![retro cartolina](retro.jpg)
