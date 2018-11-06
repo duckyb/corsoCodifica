@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader xml:lang="it">
+        <fileDesc>
+            <titleStmt>
+                <title> ??? </title>
+                <respStmt>
+                    <resp></resp>
+                    <name> ??? </name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher> ??? </publisher>
+                <date> ??? </date>
+                <address> --- </address>
+                <pubPlace> --- </pubPlace>
+                <availability status="restricted">
+                    <p>Disponibile solo per uso personale</p>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <title type="main"> ??? </title>
+                    <author> ??? </author>
+                    <publisher> ??? </publisher>
+                    <date when=" ??? "> ??? </date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p> ??? </p>
+        </encodingDesc>
+
+        <revisionDesc></revisionDesc>
+    </teiHeader>
+    <body>
+        <div type="verso">
+            <div type="message">
+                <p> ??? </p>
+                <p> ??? </p>
+            <signed> ??? </signed>
+            </div>
+            <div type="destination">
+                <ab>
+                    <stamp type="publicity"> ??? <mentioned> ??? </mentioned>
+                    </stamp>
+                    <stamp type="postmark"> ??? <mentioned> ??? </mentioned> ??? <date 
+                    when=" ??? "> ??? </date>
+                    </stamp>
+                    <stamp type="postage"> ??? </stamp>
+                </ab>
+                <address>
+                    <addrLine> ??? </addrLine>
+                    <addrLine> ??? </addrLine>
+                    <addrLine> ??? </addrLine>
+                    <addrLine> ??? </addrLine>
+                </address>
+            </div>
+        </div>
+    </body>
+</TEI>
