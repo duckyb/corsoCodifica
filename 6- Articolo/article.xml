@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader xml:lang="it">
+        <fileDesc>
+            <titleStmt>
+                <title>L'Italia del Fumetto</title>
+                <respStmt>
+                    <resp>Codifica XML TEI a cura di</resp>
+                    <name type="person">Duccio Breschi</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher type="person">Duccio Breschi</publisher>
+                <date when="20181119">11 Nov 2018</date>
+                <address> [redacted] </address>
+                <pubPlace> [redacted] </pubPlace>
+                <availability status="restricted">
+                    <p>Disponibile solo per uso personale</p>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <author>
+                        <persName>
+                            <surname>Ilaria</surname>
+                            <forename>Danesi</forename>
+                        </persName>
+                    </author>
+                    <publisher>La Freccia</publisher>
+                    <date when="20181105"> 5 Novembre 2018 </date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Codifica di un articolo della rivista LA FRECCIA</p>
+        </encodingDesc>
+
+        <revisionDesc>
+            <p>Prima versione codificata in data <date when="20181119">19 Nov 2018</date></p>
+        </revisionDesc>
+    </teiHeader>
+    <!-- =================================== -->
+    <text xml:lang="it">
+        <body>
+            <!-- intestazione -->
+            <title type="full">
+                <title type="main">METROPOLITAN ART</title>
+                <title type="sub">di <name type="person" rendition="#italic">Ilaria Danesi</name></title>
+
+                <title type="main">
+                    <line>L'ITALIA</line>
+                    <line rendition="#bold">DEL FUMETTO</line>
+                </title>
+            </title>
+            <!-- immagine di tex willer -->
+            <figure place="margin">
+                <figDesc>
+                    disegno a colori di Tex Willer rivolto verso il testo.
+                    Il personaggio tiene nella mano una pistola dalla quale esce
+                    del fumo bianco.
+                </figDesc>
+                <publisher>© <name type="person">Sergio Bonelli</name> Editore</publisher>
+            </figure>
+            <!-- testo colonna 1 -->
+            <p>
+                D'autore, d'azione, storico,<lr/>
+                fantastico: la passione<lr/>
+                per il fumetto in tutte le<lr/>
+                sue forme cresce sempre più e ne<lr/>
+                sono testimoni i tanti appuntamenti<lr/>
+                d'autunno dedicati alla riscoperta dei<lr/>
+                suoi miti. Il tour dell'<name type="place">Italia</name> dei comics<lr/>
+                parte dal Centro Saint-Benin di <name type="place">Aosta</name>,<lr/>
+                con la rassegna <title rendition="#italic">Il mondo di Jacovitti</title>,<lr/>
+                in programma fino al <date when="20190428">28 aprile 2019</date>.<lr/>
+                Oltre 250 opere originali per calarsi<lr/>
+                nell'universo surreale e colorato<lr/>
+                del papà di <name>Cocco Bill</name> e <name>Zorry Kid</name>,<lr/>
+                genio poliedrico capace di passare<lr/>
+                dal Carosello alle riviste umoristiche,<lr/>
+                sempre con un tratto inconfondibile.<lr/>
+                Il Museo della Permanente di <name type="place">Milano</name><lr/>
+                fino al <date when="20190127">27 gennaio 2019</date> ospita<lr/>
+                l'imperdibile <title rendition="italic">Tex - 70 anni di un mito</title>.<lr/>
+                I fan del cowboy di <name type="person">Bonelli</name> e <name type="person">Galleppini</name><lr/>
+                potranno ammirare disegni, tavole,<lr/>
+                fotografie e oggetti personali degli<lr/>
+                autori, nonché installazioni ad hoc<lr/>
+                per l'evento, ripercorrendo l'epopea<lr/>
+                del ranger diventato fenomeno di<lr/>
+                costume.<lr/>
+                Dal <date when="20181202">2 dicembre</date>, la mostra <title rendition="#italic">Valentina -<lr/>
+                Una vita con Crepax</title> al Museo Civico di<lr/>
+            </p>
+            <!-- testo colonna 2 -->
+            <p>
+                <name type="place">Bassano del Grappa (VI)</name> ripercorre<br/>
+                le strade del fumettista e della sua<br/>
+                iconica eroina femminile. Donna forte<br/>
+                e fragile, sensuale, emotivamente<br/>
+                instabile, sospesa tra realtà e sogno:<br/>
+                un personaggio vero e forse per questo<br/>
+                così amato.<br/>
+                Tappa obbligata a Bologna per il festival<br/>
+                BilBOlbul (<date when="20181123">23</date>-<date when="20181125">25 novembre</date>) con<br/>
+                mostre, incontri, spettacoli, workshop e<br/>
+                attività per bambini. Ricco il calendario<br/>
+                degli eventi off, tra cui la mostra <title rendition="#italic"><name type="person">Guido<br/>
+                Buzzelli</name> - Anatomia delle macerie</title><br/>
+                all'Accademia di Belle Arti e l'imaggio<br/>
+                a una star internazionale: <name type="person">Jack Kirby</name>,<br/>
+                leggendario autore dei Supereroi Marvel,<br/>
+                alla Fondazione del Monte di <name type="place">Bologna</name> e<br/>
+                <name type="place">Ravenna</name> dal <date when="20181124">24 novembre</date> al <date when="20191105">5 gennaio 2019</date>.<br/>
+                Si chiude alla Galleria Comunale d'Arte<br/>
+                Contemporanea di <name type="place">Arezzo</name>, con <title rendition="#italic">Milo<br/>
+                Manara biografo di Caravaggio</title>, che fino<br/>
+                all'<date when="20190108">8 gennaio 2019</date> racconta in oltre<br/>
+                100 tavole inedite il genio di Michelangelo<br/>
+                Merisi e la sua avventurosa esistenza.<br/>
+                Cambia lo stile, non la passione.<br/>
+                Perché la storia del fumetto ha ancora<br/>
+                molte pagine da raccontare.<br/>
+            </p>
+        </body>
+    </text>
+</TEI>
