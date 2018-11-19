@@ -8,7 +8,7 @@
     <tr>
         <td>
             Auguri vivissimi e buone feste<br/>
-            (???)ssamente alla famiglia<br/>
+            unitamente alla famiglia<br/>
             Marino Ginevra Nino<br/>
             Milano 22-3
         </td>
