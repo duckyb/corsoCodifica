@@ -15,7 +15,7 @@
             Evviva la Vittoria!<br/>
             Evviva l'Italia!<br/>
             Tuo amico<br/>
-            (???)
+            Giulio Fantoni
         </td>
         <td>
             Capitano    11<br/>
