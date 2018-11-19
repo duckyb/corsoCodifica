@@ -1,6 +1,6 @@
 # Progetto Esame - Cartoline
 | Fronte | Retro |
 | --- | --- |
-| ![timbriFronte](7694-011F.jpg) | ![timbriRetro](7694-011R.jpg) |
-| ![facileFronte](7694-016F.jpg) | ![facileRetro](7694-016R.jpg) |
-| ![diffFronte](7694-020F.jpg) | ![diffRetro](7694-020R.jpg) |
+| ![timbriFronte](/cartolina7694-011/fronte.jpg) | ![timbriRetro](/cartolina7694-011/retro.jpg) |
+| ![facileFronte](/cartolina7694-016/fronte.jpg) | ![facileRetro](/cartolina7694-016/retro.jpg) |
+| ![diffFronte](/cartolina7694-020/fronte.jpg) | ![diffRetro](/cartolina7694-020/retro.jpg) |
