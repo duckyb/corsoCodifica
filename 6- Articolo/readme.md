@@ -1,7 +1,8 @@
-# L'ITALIA DEL
-# FUMETTO
-| --- | --- |
-| D'autore, d'azione, storico,
+# L'ITALIA DEL FUMETTO
+
+<table border="0">
+ <tr>
+    <td>D'autore, d'azione, storico,
 fantastico: la passione
 per il fumetto in tutte le
 sue forme cresce sempre più e ne
@@ -28,5 +29,7 @@ per l'evento, ripercorrendo l'epopea
 del ranger diventato fenomeno di
 costume.
 Dal 2 dicembre, la mostra Valentina -
-Una vita con Crepax al Museo Civico di |
---- |
+Una vita con Crepax al Museo Civico di</td>
+    <td>Lorem ipsum ...</td>
+ </tr>
+</table>
