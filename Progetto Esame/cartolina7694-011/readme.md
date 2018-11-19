@@ -14,7 +14,15 @@
             mio saluto<br/>
             Evviva la Vittoria!<br/>
             Evviva l'Italia!<br/>
-                Tuo amico<br/>
-                (???)
+            Tuo amico<br/>
+            (???)
+        </td>
+        <td>
+            Capitano    11<br/>
+            Cogliola Giovanni<br/>
+            11° Gruppo D'Assalto<br/>
+            2ᵃ Divisione<br/>
+            5ᵃ Compagnia<br/>
+            (???)
         </td>
     </tr>
