@@ -23,6 +23,6 @@
             11° Gruppo D'Assalto<br/>
             2ᵃ Divisione<br/>
             5ᵃ Compagnia<br/>
-            (???)
+            ____di Guerra
         </td>
     </tr>
