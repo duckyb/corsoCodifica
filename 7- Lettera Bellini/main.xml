@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader xml:lang="it">
+        <fileDesc>
+            <titleStmt>
+                <title>Lettera Bellini</title>
+                <respStmt>
+                    <resp>Codifica XML TEI a cura di</resp>
+                    <name type="person">Duccio Breschi</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher type="person">Duccio Breschi</publisher>
+                <date when="20181119">21 Nov 2018</date>
+                <address> [redacted] </address>
+                <pubPlace> [redacted] </pubPlace>
+                <availability status="restricted">
+                    <p>Disponibile solo per uso personale</p>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <author>Bellini</author>
+                    <publisher type="person">Bellini</publisher>
+                    <date when="19260601"> Giugno 26 </date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Codifica digitale di due pagine della lettera, mantenendo informazioni relative alla disposizione del testo sul foglio</p>
+        </encodingDesc>
+
+        <revisionDesc>
+            <p>Prima versione codificata in data <date when="20181119">21 Nov 2018</date></p>
+        </revisionDesc>
+    </teiHeader>
+    <!-- =================================== -->
+    <text xml:lang="it">
+        <body>
+           <facsimile>
+               <surface>
+                    <!--prima pagina-->
+                    <graphic url='page1.jpg' width='1265px' height='1639px' />
+                    <!-- righe di testo -->
+                    <zone xml:id='p1r1' points = ' 43,121 57,27 931,31 1209,91 1214,222 919,162 '>
+                        <line>Jun 26. Puteau N:° 19 bis rampe de Neuilly</line>
+                    </zone>
+                    <zone xml:id='p1r2' points = ' 209,262 318,214 694,200 916,229 907,280 '>
+                        <line>Mio caro Carluccio</line>
+                    </zone>
+                    <zone xml:id='p1r3' points = ' 327,433 364,362 1085,348 1228,385 1219,429 572,466 '>
+                        <line>avendo steso l'intero duetto</line>
+                    </zone>
+                    <zone xml:id='p1r4' points = ' 163,506 552,498 1163,509 1156,587 818,621 153,552 '>
+                        <line>e mancando in esso qualche</line>
+                    </zone>
+                    <zone xml:id='p1r5' points = ' 168,746 190,652 1139,637 1120,720 506,772 '>
+                        <line>cosetta, desidererei che tu</line>
+                    </zone>
+                    <zone xml:id='p1r6' points = ' 158,804 1134,803 1129,900 139,901 '>
+                        <line>t'incomodassi a venire a</line>
+                    </zone>
+                    <zone xml:id='p1r7' points = ' 149,1047 169,949 1215,998 1205,1091 '>
+                        <line>Puteau per tutto fissare, e</line>
+                    </zone>
+                    <zone xml:id='p1r8' points = ' 136,1182 192,1115 1151,1125 1144,1217 '>
+                        <line>nell'istesso tempo darmi la</line>
+                    </zone>
+                    <zone xml:id='p1r9' points = ' 119,1328 178,1262 626,1254 1224,1291 1221,1345 '>
+                        <line>sortita di Rubini, se è termi</line>
+                    </zone>
+                    <zone xml:id='p1r10'points = ' 130,1450 172,1394 555,1364 1060,1370 1226,1408 1220,1450 1019,1481 '>
+                        <line>nata. T'aspetto in qual giorno</line>
+                    </zone>
+                    <zone xml:id='p1r11'points = ' 115,1548 192,1473 1029,1473 1128,1484 1124,1524 753,1544 358,1563 277,1600 '>
+                        <line>ed in qual'ora vorrai.</line>
+                    </zone>
+                    <!-- firma -->
+                    <zone xml:id='firma' points = ' 665,1592 738,1540 1167,1519 1161,1609 '>
+                        <line>Il tuo Vincenzillo</line>
+                    </zone>
+               </surface>
+               <surface>
+                    <!--seconda pagina-->
+                    <graphic url='page2.jpg' width='1268px' height='1646px' />
+                    <!-- timbro in alto a sinistra -->
+                    <zone xml:id='timbroUL' points = ' 52,39 166,185 394,40 '/>
+                    <!-- timbro centrale a destra -->
+                    <zone xml:id='timbroMR' points = ' 919,365 1070,372 1169,532 1092,697 887,703 790,567 816,435 ' />
+                    <!-- timbro in basso a sinistra -->
+                    <zone xml:id='timbroBL' points = ' 70,1379 68,1262 159,1155 319,1168 397,1294 364,1427 102,1416 ' />
+                    <!-- fiore grande -->
+                    <zone xml:id='bigFlower' points = ' 614,1063 516,1160 459,1314 531,1430 625,1519 675,1437 655,1202 ' />
+                    <!-- fogliolina -->
+                    <zone xml:id='smallLeaf' points = ' 383,1044 443,1167 471,1119 461,1059 395,1024 ' />
+                    <!-- -27 -->
+                    <zone xml:id='twentySeven' points = ' 1125,971 1192,1009 1124,1126 1081,1022 '>
+                        <line>27-</line>
+                    </zone>
+                    <!-- bloccoTesto1 -->
+                    <zone xml:id='p2r1' ulx="210" uly="535" lrx="812" lry="620">
+                        <line>à Monsieur</line>
+                    </zone> 
+                    <zone xml:id='p2r2' ulx="186" uly="630" lrx="1239" lry="771">
+                        <line>Monsieur le Comte Pepoli</line>
+                    </zone>
+                    <zone xml:id='p2r3' ulx="184" uly="750" lrx="1236" lry="874">
+                        <line>n° 1: passage des petits Pères</line>
+                    </zone>
+                    <!-- destinatario -->
+                    <zone xml:id='p2r4' ulx="672" uly="862" lrx="1080" lry="954">
+                        <line>à Paris</line>
+                    </zone> 
+                    <!-- bloccoTesto2 -->
+                    <zone xml:id='p2r5' ulx="938" uly="1046" lrx="1043" lry="1364">
+                        <line>Lettera del</line>
+                    </zone>
+                    <zone xml:id='p2r6' ulx="842" uly="1021" lrx="952" lry="1550">
+                        <line>Bellini sul duetto</line>
+                    </zone>
+                    <zone xml:id='p2r7' ulx="691" uly="1005" lrx="854" lry="1590">
+                        <line>del p°atto dei Puritani</line>
+                    </zone>
+               </surface>
+           </facsimile>
+        </body>
+    </text>
+</TEI>
