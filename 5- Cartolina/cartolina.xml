@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TEI SYSTEM "tei_lite.dtd">
-<TEI xmlns="http://www.teic.org/ns/1.0">
+<TEI
+    xmlns="http://www.teic.org/ns/1.0">
     <teiHeader xml:lang="it">
         <fileDesc>
             <titleStmt>
@@ -10,7 +11,6 @@
                     <name type="person">Duccio Breschi</name>
                 </respStmt>
             </titleStmt>
-
             <publicationStmt>
                 <publisher type="person">Duccio Breschi</publisher>
                 <date when="20181119">11 Nov 2018</date>
@@ -20,7 +20,6 @@
                     <p>Disponibile solo per uso personale</p>
                 </availability>
             </publicationStmt>
-
             <sourceDesc>
                 <bibl>
                     <author>Giulia</author>
@@ -30,37 +29,38 @@
                 </bibl>
             </sourceDesc>
         </fileDesc>
-
         <encodingDesc>
             <p>Codifica digitale di entrambi i lati della cartolina</p>
         </encodingDesc>
-
         <revisionDesc>
-            <p>Prima versione codificata in data <date when="20181119">19 Nov 2018</date></p>
+            <p>Prima versione codificata in data 
+                <date when="20181119">19 Nov 2018</date>
+            </p>
         </revisionDesc>
     </teiHeader>
     <!-- =================================== -->
     <text xml:lang="it">
         <body>
-    <!-- =========== FRONTE | IMG ========== -->
+            <!-- =========== FRONTE | IMG ========== -->
             <div type="recto">
                 <figure>
                     <head>Torino - Piazza San Carlo</head>
                     <figDesc>Fotografia in bianco e nero di Piazza San Carlo (Torino), nella piazza si distinguono alcuni passanti e diverse macchine parcheggiate.</figDesc>
                 </figure>
             </div>
-    <!-- =========== RETRO | TEXT ========== -->
+            <!-- =========== RETRO | TEXT ========== -->
             <div type="verso">
                 <div type="message">
                     <p>Un affettuoso saluto</p>
-                <signed>Giulia</signed>
-                <signed>Monika</signed>
+                    <signed>Giulia</signed>
+                    <signed>Monika</signed>
                 </div>
-
                 <surface>
                     <graphic url='retro.jpg' width='2417px' height='1698px' />
                     <zone ulx="178" uly="1496" lrx="940" lry="1538">
-                        Ediz. <name type="person">Filomena Andreozzi</name> - Rip. Vietata
+                        Ediz. 
+                        <name type="person">Filomena Andreozzi</name> - Rip. Vietata
+                    
                     </zone>
                     <zone ulx="1068" uly="1446" lrx="1371" lry="1540">
                         Vera Fotografia 76
@@ -69,22 +69,34 @@
                         FOTOCELERE - TORINO
                     </zone>
                 </surface>
-
                 <div type="destination">
                     <ab>
-                        <stamp type="postmark"> timbro formato da due cerchi concentrici con testo esterno <mentioned> PONZA (LATINA) </mentioned> e all'interno <mentioned><date 
-                        when="19350817">17.8.35—0</date></mentioned>
+                        <stamp type="postmark"> timbro formato da due cerchi concentrici con testo esterno 
+                            <mentioned> PONZA (LATINA) </mentioned> e all'interno 
+                            <mentioned>
+                                <date 
+                        when="19350817">17.8.35—0</date>
+                            </mentioned>
                         </stamp>
                         <stamp type="postage">
-                        Francobollo rettangolare color rosso/arancio rappresentante una donna rivolta verso destra, in alto a destra vi è scritto <mentioned>5 LIRE</mentioned>, in basso <mentioned>POSTE ITALIANE</mentioned>
+                        Francobollo rettangolare color rosso/arancio rappresentante una donna rivolta verso destra, in alto a destra vi è scritto 
+                            <mentioned>5 LIRE</mentioned>, in basso 
+                            <mentioned>POSTE ITALIANE</mentioned>
                         </stamp>
                         <stamp type="postage">
-                        Francobollo rettangolare viola rappresentante un uomo rivolto verso destra, in alto a destra vi è scritto <mentioned>15 LIRE</mentioned>, in basso <mentioned>POSTE ITALIANE</mentioned></stamp>
+                        Francobollo rettangolare viola rappresentante un uomo rivolto verso destra, in alto a destra vi è scritto 
+                            <mentioned>15 LIRE</mentioned>, in basso 
+                            <mentioned>POSTE ITALIANE</mentioned>
+                        </stamp>
                     </ab>
                     <address>
                         <addrLine>Per</addrLine>
-                        <addrLine><name type="person">Carlo Di Nitto</name></addrLine>
-                        <addrLine>Corso Italia, <num type="cardinal" value="11">11</num></addrLine>
+                        <addrLine>
+                            <name type="person">Carlo Di Nitto</name>
+                        </addrLine>
+                        <addrLine>Corso Italia, 
+                            <num type="cardinal" value="11">11</num>
+                        </addrLine>
                         <addrLine>Gaeta</addrLine>
                         <addrLine>Latina</addrLine>
                     </address>
