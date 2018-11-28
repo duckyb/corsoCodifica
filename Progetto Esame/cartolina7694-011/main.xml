@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="ita">Giulio Fantoni al capitano Cogliola Giovanni, Ravenna, 9 Novembre 1918</title>
+                <author xml:id="auth_GF">Giulio Fantoni</author>
+                <respStmt>
+                    <resp>Trascrizione a cura di</resp>
+                    <name xml:id="GC">Giacomo Cerretini</name>
+                    <name xml:id="DB">Duccio Breschi</name>
+                    <name xml:id="CP">Camilla Poggianti</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edizione digitale
+                    <!-- ??Note: modificare quando daremo esame?? -->
+                    <date when="2018-12">Dicembre 2018</date>
+                </edition>
+                <respStmt>
+                    <resp>Codificato da</resp>
+                    <ref target="#CP" />
+                    <ref target="#DB" />
+                    <ref target="#GC" />
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Museo di La Spezia</publisher>
+                <pubPlace>La Spezia(SP)</pubPlace>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="postcard">
+                    <author>
+                        <!-- autore (mittente) della cartolina -->
+                        <persName ref="#auth_GF">
+                            <forename>Giulio</forename>
+                            <surname>Fantoni</surname>
+                            </persnname>
+                    </author>
+                    <!-- editore della cartolina -->
+                    <date when="1918-11-9">09 Novembre 1918</date>
+                    <publisher>Eliocromia Fumagalli &amp; C</publisher>
+                    <pubPlace>Milano</pubPlace>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement xml:id="loc_RV">Ravenna</settlement>
+                        <idno type="postcard_id" xml:id="7694_011">7694_011</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <textLang xml:id="lang_ITA" mainLang="ita">Italiano</textLang>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>Cartoncino</material>
+                                    <!-- descrizione fisica dei timbri -->
+                                    <stamp type="postmark"> 
+                                        Sul retro, nella metà destra della cartolina, sono presenti due timbri circolari: 
+                                        uno di partenza e l'altro di arrivo. 
+                                        Il timbro di arrivo (a sinistra) è parzialmente tagliato superiormente, mentre quello di partenza (a destra) è interamente contenuto sul supporto cartaceo. 
+                                        Entrambi i timbri sono leggibili soltanto parzialmente, causa anche di sbavature dell'inchiostro.
+								    </stamp>
+                                    <!-- descrizione fisica del francobollo -->
+                                    <stamp type="postage"> 
+                                         Francobollo di dimensione rettangolare color rosso, applicato sotto il timbro di partenza e capovolto.
+                                    </stamp>
+                                    <!-- descrizione fisica della cartolina -->
+                                    <p>
+                                        Cartolina in buone condizioni fisiche, con testo solo sul verso e retro con dipinto d'autore. Cartoncino senza filigrana, colore avorio, con testo in inchiostro nero. 
+                                        La parte retro presenta l’indirizzo, il testo scritto su due colonne le quali dividono mittente e destinatario,  il francobollo, il timbro di partenza e il timbro di arrivo; 
+                                        La parte fronte presenta una rappresentazione artischita. 
+                                    </p>
+                                </support>
+                                <!-- grandezza appossimativa del documento elettronico -->
+                                <extent>
+                                    <measure type="composition" unit="folio" quantity="1">1</measure>
+                                    <dimensions unit="mm">
+                                        <height>89</height>
+                                        <width>138</width>
+                                    </dimensions>
+                                </extent>
+                                <!-- descrizione delle condizioni fisiche di conservazione della cartolina -->
+                                <condition>
+                                    <p>Cartolina in buone condizioni fisiche, eccetto i timbri solo parzialmente leggibili</p>
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <!-- descrizione del tipo di scrittura usato nella cartolina -->
+                        <handDesc>
+                            <p>Scrittura a mano libera leggibile.</p>
+                        </handDesc>
+                    </physDesc>
+                    <!-- ?? Note: Completare o rimuovere <additional /> ?? -->
+                    <!-- <additional>
+						<adminInfo>
+							<note></note>
+						</adminInfo>
+					</additional> -->
+                </msDesc>
+            </sourceDesc>
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#auth_GF" role="composer">Giulio Fantoni</persName>
+                        <placeName ref="loc_RV">Ravenna</placeName>
+                        <date when="1918-11-10">10 Novembre 1918</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName xml:id="rec_CG" role="captain">Cogliola Giovanni</persName>
+                        <placeName xml:id="loc_GDC">11&deg; Gruppo D'Assalto, 2&#7491; Divisione, 5&#7491; Compagnia</placeName>
+                        <date when="1918-11-10">10 Novembre 1918</date>
+                    </correspAction>
+                </correspDesc>
+                <langUsage>
+                    <language ref="lang_ITA">Italiano</language>
+                </langUsage>
+            </profileDesc>
+            <!-- ?? Note: Da revisionare -->
+            <encodingDesc>
+                <p>
+                    Sono state rispettate le forme lessicali, la punteggiatura e la sillabazione del documento, 
+                    normalizzando il tutto per la codifica.
+                </p>
+            </encodingDesc>
+            <revisionDesc>
+                <change when="2018-11-28" resp="#CP #DB #CG">Inizio creazione teiHeader e bozza dati spedizione.</change>
+            </revisionDesc>
+            <!-- <xenoData></xenoData> -->
+        </fileDesc>
+    </teiHeader>
+    <!-- ====================================== T E X T ====================================== -->
+    <text xml:lang="it">
+        <body>
+            <!-- =========== FRONTE | IMG | RECTO ========== -->
+            <div type="recto">
+                <figure>
+                    <!-- Titolo dell'immagine (se presente) -->
+                    <head></head>
+                    <!-- Descrizione dell'immagine in linguaggio naturale -->
+                    <figDesc></figDesc>
+                </figure>
+            </div>
+            <!-- =========== RETRO | TEXT | VERSO ========== -->
+            <div type="verso">
+                <div type="message">
+                    <p></p>
+                    <!-- Firma del mittente -->
+                    <signed></signed>
+                </div>
+                <surface>
+                    <graphic url="''" width="''" height="''" />
+                    <!-- Il tag <zone /> si ripete più volte -->
+                    <zone ulx="" uly="" lrx="" lry="">
+                        <!-- testo presente nella zona definita-->
+                    </zone>
+                </surface>
+                <div type="destination">
+                    <ab>
+                        <stamp type="postmark"></stamp>
+                        <stamp></stamp>
+                        <stamp type="postage"></stamp>
+                    </ab>
+                    <address>
+                        <!-- Righe della sezione: Destinatario -->
+                        <addrLine>Capitano    11</addrLine>
+                        <addrLine>Cogliola Giovanni</addrLine>
+                        <addrLine>Cogliola Giovanni</addrLine>
+                        <addrLine>11&deg; Gruppo D'Assalto</addrLine>
+                        <addrLine>2&#7491; Divisione</addrLine>
+                        <addrLine>5&#7491; Compagnia</addrLine>
+                        <addrLine>Faro di Guerra</addrLine>
+                    </address>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

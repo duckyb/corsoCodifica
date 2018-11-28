@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+                <pubPlace>
+            </publicationStmt>
+			<sourceDesc>
+                <bibl>
+                    <title></title>
+                    <respStmt>
+                        <resp></resp>
+                        <name></name>
+                    </respStmt>
+                    <publisher></publisher>
+                    <pubPlace></pubPlace>
+                    <note></note>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+</TEI>

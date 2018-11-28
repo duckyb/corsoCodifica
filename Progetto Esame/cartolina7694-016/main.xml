@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_lite.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+                <pubPlace>
+                    </p>
+            </publicationStmt>>
+			<sourceDesc>
+                <bibl>
+                    <title level="m"></title>
+                    <respStmt>
+                        <resp></resp>
+                        <name></name>
+                    </respStmt>
+                    <publisher></publisher>
+                    <pubPlace></pubPlace>
+                    <note></note>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="recto" facs="retro.jpg">
+                <figure>
+                    <graphic url="retro.jpg" />
+                    <figDesc></figDesc>
+                </figure>
+            </div>
+            <div type="verso" facs="fronte.jpg">
+                <div type="message" xml:lang="it">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <signed></signed>
+                </div>
+                <div type="destination">
+                    <ab>
+                        <stamp type="publicity"></stamp>
+                        <stamp type="postage">
+                            <p></p>
+                            <p></p>
+                            <placeName></placeName>
+                            </date>
+                        </stamp>
+                    </ab>
+                    <ab>
+                        <address>
+                            <addrLine></addrLine>
+                            <addrLine></addrLine>
+                            <addrLine></addrLine>
+                        </address>
+                    </ab>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>z
