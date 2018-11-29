@@ -15,7 +15,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>Edizione digitale
-                    <!-- ??Note: modificare quando daremo esame?? -->
+                    <!-- ??Note: modificare quando daremo esame -->
                     <date when="2018-12">Dicembre 2018</date>
                 </edition>
                 <respStmt>
@@ -99,7 +99,7 @@
                             <p>Scrittura a mano libera leggibile.</p>
                         </handDesc>
                     </physDesc>
-                    <!-- ?? Note: Completare o rimuovere <additional /> ?? -->
+                    <!-- ??Note: Completare o rimuovere <additional /> -->
                     <!-- <additional>
 						<adminInfo>
 							<note></note>
@@ -124,7 +124,7 @@
                     <language ref="lang_ITA">Italiano</language>
                 </langUsage>
             </profileDesc>
-            <!-- ?? Note: Da revisionare -->
+            <!-- ??Note: Da revisionare -->
             <encodingDesc>
                 <p>
                     Sono state rispettate le forme lessicali, la punteggiatura e la sillabazione del documento, 
@@ -137,10 +137,10 @@
             <!-- <xenoData></xenoData> -->
         </fileDesc>
     </teiHeader>
-    <!-- ====================================== T E X T ====================================== -->
+    <!-- ...................................... T E X T ...................................... -->
     <text xml:lang="it">
         <body>
-            <!-- =========== FRONTE | IMG | RECTO ========== -->
+            <!-- ............ FRONTE | IMG | RECTO ............ -->
             <div type="recto">
                 <figure>
                     <!-- Titolo dell'immagine (se presente) -->
@@ -149,7 +149,7 @@
                     <figDesc></figDesc>
                 </figure>
             </div>
-            <!-- =========== RETRO | TEXT | VERSO ========== -->
+            <!-- ............ RETRO | TEXT | VERSO ............ -->
             <div type="verso">
                 <div type="message">
                     <p></p>
