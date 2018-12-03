@@ -20,9 +20,9 @@
                 </edition>
                 <respStmt>
                     <resp>Codificato da</resp>
-                    <ref target="#CP" />
-                    <ref target="#DB" />
-                    <ref target="#GC" />
+                    <name ref="#CP">C.Poggianti</name>
+                    <name ref="#DB">D.Breschi</name>
+                    <name ref="#GC">G.Cerretini</name>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
@@ -107,6 +107,9 @@
 					</additional> -->
                 </msDesc>
             </sourceDesc>
+            <!-- ??Note: Da revisionare -->
+            <!-- <xenoData></xenoData> -->
+        </fileDesc>
             <profileDesc>
                 <correspDesc>
                     <correspAction type="sent">
@@ -121,28 +124,27 @@
                     </correspAction>
                 </correspDesc>
                 <langUsage>
-                    <language ref="lang_ITA">Italiano</language>
+                    <!--language ref="lang_ITA">Italiano</language-->
+                    <language ident="it-IT">Italiano</language>
                 </langUsage>
             </profileDesc>
-            <!-- ??Note: Da revisionare -->
             <encodingDesc>
                 <p>
                     Sono state rispettate le forme lessicali, la punteggiatura e la sillabazione del documento, 
                     normalizzando il tutto per la codifica.
                 </p>
             </encodingDesc>
-            <revisionDesc>
-                <change when="2018-11-28" resp="#CP #DB #CG">Inizio creazione teiHeader e bozza dati spedizione.</change>
-                <change when="2018-12-03" resp="#CP #DB #CG">Fine teiHeader, realizzazione delle zone e facsimili, inizio codifica del retro della cartolina.</change>
-            </revisionDesc>
-            <!-- <xenoData></xenoData> -->
-        </fileDesc>
+        <revisionDesc>
+            <change when="2018-11-28" resp="#CP #DB #CG">Inizio creazione teiHeader e bozza dati spedizione.</change>
+            <change when="2018-12-03" resp="#CP #DB #CG">Fine teiHeader, realizzazione delle zone e facsimili, inizio codifica del retro della cartolina.</change>
+        </revisionDesc>
     </teiHeader>
     <!-- ...................................... T E X T ...................................... -->
     <facsimile>
         <!-- zonazione retro della cartolina -->
         <surface>
-            <graphic xml:id="retro_postcard" start="#retro-postcard" url="'retro.jpg'" width="'1628px'" height="'1053px'" />
+            <!--graphic xml:id="retro_postcard" start="#retro-postcard" url="'retro.jpg'" width="'1628px'" height="'1053px'" /-->
+            <graphic xml:id="retro_postcard" url="'retro.jpg'" width="'1628px'" height="'1053px'" />
             <!-- prima pagina, lato sx -->
             <zone xml:id="line_PlaceDate" start="#line-PlaceDate" points="' 190,165 261,32 301,41 298,83 499,88 573,28 742,10 851,51 755,169 637,161 598,229 477,191 429,155 273,161 247,205 '" />
             <zone xml:id="lineText_1" start="#lineText-1" points="' 90,349 61,317 104,236 199,174 177,264 290,232 501,222 783,241 755,310 425,328 '" />
@@ -202,34 +204,20 @@
                             <placeName ref="loc_RV">Ravenna</placeName>
                             <date when="1918-11-09">9/11/918</date>
                         </dateline>
+                        <salute>
+                            <lb xml:id="lineText-1" facs="#lineText_1" />A voi miei cari
+                            <lb xml:id="lineText-2" facs="#lineText_2" />Eroi! Il mio
+                            <lb xml:id="lineText-3" facs="#lineText_3" />bacio e il
+                            <lb xml:id="lineText-4" facs="#lineText_4" />mio saluto
+                        </salute>
                     </opener>
                     <!--saluto iniziale-->
-                    <p>
-                        <s type="sentence">
-                            <salute>
-                                <lb xml:id="lineText-1" facs="#lineText_1" />A voi miei cari
-                                <lb xml:id="lineText-2" facs="#lineText_2" />Eroi! Il mio
-                                <lb xml:id="lineText-3" facs="#lineText_3" />bacio e il
-                                <lb xml:id="lineText-4" facs="#lineText_4" />mio saluto
-                            </salute>
-                        </s>
                         <!--contenuto del messaggio-->
-                        <s type="sentece">
-                            <lb xml:id="lineText-5" facs="#lineText_5" />Evviva la Vittoria!
-                            <lb xml:id="lineText-6" facs="#lineText_6" />Evviva l'<country>Italia</country>!
-                        </s>
+                    <p>
+                        <lb xml:id="lineText-5" facs="#lineText_5" />Evviva la Vittoria!
+                        <lb xml:id="lineText-6" facs="#lineText_6" />Evviva l'<country>Italia</country>!
                     </p>
                     <!--saluto finale e firma-->
-                    <closer rend="align(right)">
-                        <!-- Firma del mittente -->
-                        <lb xml:id="lineText-7" facs="#lineText_7" />Tuo amico
-                        <signed xml:id="lineText-8" facs="lineText_8">
-                            <persName ref="auth_GF">
-                                <forename>Giulio</forename>
-                                    <surname>Fantoni</surname>
-                            </persName>
-                        </signed>
-                    </closer>
                     <p>
                         <s xml:id="line-vertical" facs="#line_vertical">
                             <!-- Testo ruotato 90° -->
@@ -245,9 +233,19 @@
                             </orgName>
                         </s>
                     </p>
+                    <closer rend="align(right)">
+                        <!-- Firma del mittente -->
+                        <lb xml:id="lineText-7" facs="#lineText_7" />Tuo amico
+                        <signed xml:id="lineText-8" facs="lineText_8">
+                            <persName ref="auth_GF">
+                                <forename>Giulio</forename>
+                                    <surname>Fantoni</surname>
+                            </persName>
+                        </signed>
+                    </closer>
                 </div>
                 <div type="destination">
-                    <ab>
+                    <ab n="1">
                         <!-- Timbro SX -->
                         <stamp type="postmark">
                             
@@ -259,25 +257,28 @@
                         <!-- Francobollo -->
                         <stamp type="postage" style="transform:rotateZ(180deg);">
                             <mentioned style="color:red;">
-                                <hi palce="top">Poste italiane</hi>
-                                <hi place="bottom"><hi rend="double">10</hi> centesimi <hi rend="double">10</hi></hi>
+                                <hi>Poste italiane</hi>
+                                <hi><hi rend="double">10</hi> centesimi <hi rend="double">10</hi></hi>
                             </mentioned>
                         </stamp>
                     </ab>
-                    <address>
-                        <!-- Righe della sezione: Destinatario -->
-                        <addrLine xml:id="lineDest-1" facs="lineDest_1">Capitano    11</addrLine>
-                        <addrLine xml:id="lineDest-2" facs="lineDest_2">
-                            <persName>
-                                <surname>Cogliola</surname> 
-                                <forename>Giovanni</forename>
-                            </persName>
-                        </addrLine>
-                        <addrLine xml:id="lineDest-3" facs="lineDest_3">11&#176; Gruppo D'Assalto</addrLine>
-                        <addrLine xml:id="lineDest-4" facs="lineDest_4">2&#7491; Divisione</addrLine>
-                        <addrLine xml:id="lineDest-5" facs="lineDest_5">5&#7491; Compagnia</addrLine>
-                        <addrLine xml:id="lineDest-6" facs="lineDest_6">Faro di Guerra</addrLine>
-                    </address>
+                    <ab n="2">
+                        <!--address type="receiver"-->
+                        <address>
+                            <!-- Righe della sezione: Destinatario -->
+                            <addrLine xml:id="lineDest-1" facs="lineDest_1">Capitano    11</addrLine>
+                            <addrLine xml:id="lineDest-2" facs="lineDest_2">
+                                <persName>
+                                    <surname>Cogliola</surname> 
+                                    <forename>Giovanni</forename>
+                                </persName>
+                            </addrLine>
+                            <addrLine xml:id="lineDest-3" facs="lineDest_3">11&#176; Gruppo D'Assalto</addrLine>
+                            <addrLine xml:id="lineDest-4" facs="lineDest_4">2&#7491; Divisione</addrLine>
+                            <addrLine xml:id="lineDest-5" facs="lineDest_5">5&#7491; Compagnia</addrLine>
+                            <addrLine xml:id="lineDest-6" facs="lineDest_6">Faro di Guerra</addrLine>
+                        </address>
+                    </ab>
                 </div>
             </div>
         </body>
