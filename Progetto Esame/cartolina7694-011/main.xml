@@ -96,7 +96,7 @@
                         </objectDesc>
                         <!-- descrizione del tipo di scrittura usato nella cartolina -->
                         <handDesc>
-                            <p>Scrittura a mano libera leggibile.</p>
+                            <p>La cartolina presenta del testo stampato, contenente informazioni sulla cartolina e sull'edizione, e del testo scritto a mano dal mittente.</p>
                         </handDesc>
                     </physDesc>
                     <!-- ??Note: Completare o rimuovere <additional /> -->
@@ -133,6 +133,7 @@
             </encodingDesc>
             <revisionDesc>
                 <change when="2018-11-28" resp="#CP #DB #CG">Inizio creazione teiHeader e bozza dati spedizione.</change>
+                <change when="2018-12-03" resp="#CP #DB #CG">Fine teiHeader, realizzazione delle zone e facsimili, inizio codifica del retro della cartolina.</change>
             </revisionDesc>
             <!-- <xenoData></xenoData> -->
         </fileDesc>
@@ -203,19 +204,21 @@
                         </dateline>
                     </opener>
                     <!--saluto iniziale-->
-                    <s type="sentence">
-                        <salute>
-                            <lb xml:id="lineText-1" facs="#lineText_1" />A voi miei cari
-                            <lb xml:id="lineText-2" facs="#lineText_2" />Eroi! Il mio
-                            <lb xml:id="lineText-3" facs="#lineText_3" />bacio e il
-                            <lb xml:id="lineText-4" facs="#lineText_4" />mio saluto
-                        </salute>
-                    </s>
-                    <!--contenuto del messaggio-->
-                    <s type="sentece">
-                        <lb xml:id="lineText-5" facs="#lineText_5" />Evviva la Vittoria!
-                        <lb xml:id="lineText-6" facs="#lineText_6" />Evviva l'<country>Italia</country>!
-                    </s>
+                    <p>
+                        <s type="sentence">
+                            <salute>
+                                <lb xml:id="lineText-1" facs="#lineText_1" />A voi miei cari
+                                <lb xml:id="lineText-2" facs="#lineText_2" />Eroi! Il mio
+                                <lb xml:id="lineText-3" facs="#lineText_3" />bacio e il
+                                <lb xml:id="lineText-4" facs="#lineText_4" />mio saluto
+                            </salute>
+                        </s>
+                        <!--contenuto del messaggio-->
+                        <s type="sentece">
+                            <lb xml:id="lineText-5" facs="#lineText_5" />Evviva la Vittoria!
+                            <lb xml:id="lineText-6" facs="#lineText_6" />Evviva l'<country>Italia</country>!
+                        </s>
+                    </p>
                     <!--saluto finale e firma-->
                     <closer rend="align(right)">
                         <!-- Firma del mittente -->
@@ -227,10 +230,11 @@
                             </persName>
                         </signed>
                     </closer>
-                    <s xml:id="line-vertical" facs="#line_vertical">
-                        <!-- Testo ruotato 90° -->
-                        <lb style="writing-mode: vertical-rl; text-orientation: sideways" /> Mi raccomando quella sola XO
-                        <lb style="writing-mode: vertical-lr; text-orientation: sideways" /> 
+                    <p>
+                        <s xml:id="line-vertical" facs="#line_vertical">
+                            <!-- Testo ruotato 90° -->
+                            <lb type="hand_w" style="writing-mode: vertical-rl; text-orientation: sideways" />Mi raccomando quella sola XO <!--(??to)-->
+                            <lb type="stamp_w" style="writing-mode: vertical-lr; text-orientation: sideways" /> 
                             <orgName key="EFC" type="heliochromy">
                                 Eliocromia 
                                 <persName>
@@ -239,22 +243,35 @@
                                 &amp; C. -
                                 <placeName key="ML">Milano</placeName>
                             </orgName>
-                    </s>
+                        </s>
+                    </p>
                 </div>
                 <div type="destination">
                     <ab>
                         <!-- Timbro SX -->
-                        <stamp type="postmark"></stamp>
+                        <stamp type="postmark">
+                            
+                        </stamp>
                         <!-- Timbro DX -->
-                        <stamp type="postmark"></stamp>
+                        <stamp type="postmark">
+                            
+                        </stamp>
                         <!-- Francobollo -->
-                        <stamp type="postage"></stamp>
+                        <stamp type="postage" style="transform:rotateZ(180deg);">
+                            <mentioned style="color:red;">
+                                <hi palce="top">Poste italiane</hi>
+                                <hi place="bottom"><hi rend="double">10</hi> centesimi <hi rend="double">10</hi></hi>
+                            </mentioned>
+                        </stamp>
                     </ab>
                     <address>
                         <!-- Righe della sezione: Destinatario -->
                         <addrLine xml:id="lineDest-1" facs="lineDest_1">Capitano    11</addrLine>
                         <addrLine xml:id="lineDest-2" facs="lineDest_2">
-                            <persName>Cogliola Giovanni</persName>
+                            <persName>
+                                <surname>Cogliola</surname> 
+                                <forename>Giovanni</forename>
+                            </persName>
                         </addrLine>
                         <addrLine xml:id="lineDest-3" facs="lineDest_3">11&#176; Gruppo D'Assalto</addrLine>
                         <addrLine xml:id="lineDest-4" facs="lineDest_4">2&#7491; Divisione</addrLine>
