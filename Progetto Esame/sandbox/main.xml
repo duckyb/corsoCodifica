@@ -231,10 +231,10 @@
                         <!-- Testo ruotato 90° -->
                         <lb style="writing-mode: vertical-rl; text-orientation: sideways" /> Mi raccomando quella sola XO
                         <lb style="writing-mode: vertical-lr; text-orientation: sideways" /> 
-                            <orgName key="EFC" type="heliochromy">
+                            <orgName>
                                 Eliocromia 
                                 <persName>
-                                    <surname>Fumagalli</surname>
+                                    <surName>Fumagalli</surName>
                                 </persName> 
                                 &amp; C. -
                                 <placeName key="ML">Milano</placeName>
