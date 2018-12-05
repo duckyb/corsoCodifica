@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI SYSTEM "tei-all.dtd">
+<!DOCTYPE TEI SYSTEM "../teiCustom.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -8,9 +8,14 @@
                 <author xml:id="auth_GF">Giulio Fantoni</author>
                 <respStmt>
                     <resp>Trascrizione a cura di</resp>
-                    <name xml:id="GC">Giacomo Cerretini</name>
+                    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
+                        xpointer="GC"
+                        href="./ext/persone.xml">
+                        <xi:fallback>risorsa mancante</xi:fallback>
+                    </xi:include>
+                    <name xml:id="DB">Giacomo Cerretini</name>
                     <name xml:id="DB">Duccio Breschi</name>
-                    <name xml:id="CP">Camilla Poggianti</name>
+                    <name xml:id="CP">Camilla Poggianti</name>                
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -20,9 +25,11 @@
                 </edition>
                 <respStmt>
                     <resp>Codificato da</resp>
+                    <name ref="#GC">G.Cerretini</name>
                     <name ref="#CP">C.Poggianti</name>
                     <name ref="#DB">D.Breschi</name>
-                    <name ref="#GC">G.Cerretini</name>
+                    <!-- <name ref="#GC">G.Cerretini</name> -->
+
                 </respStmt>
             </editionStmt>
             <publicationStmt>
@@ -205,33 +212,36 @@
                             <date when="1918-11-09">9/11/918</date>
                         </dateline>
                         <salute>
-                            <lb xml:id="lineText-1" facs="#lineText_1" />A voi miei cari
-                            <lb xml:id="lineText-2" facs="#lineText_2" />Eroi! Il mio
-                            <lb xml:id="lineText-3" facs="#lineText_3" />bacio e il
-                            <lb xml:id="lineText-4" facs="#lineText_4" />mio saluto
+                            <s>
+                                <lb xml:id="lineText-1" facs="#lineText_1" />A voi miei cari
+                                <lb xml:id="lineText-2" facs="#lineText_2" />Eroi!
+                            </s>
+                            <s> Il mio
+                                <lb xml:id="lineText-3" facs="#lineText_3" />bacio e il
+                                <lb xml:id="lineText-4" facs="#lineText_4" />mio saluto
+                            </s>
                         </salute>
                     </opener>
                     <!--saluto iniziale-->
-                        <!--contenuto del messaggio-->
-                    <p>
-                        <lb xml:id="lineText-5" facs="#lineText_5" />Evviva la Vittoria!
-                        <lb xml:id="lineText-6" facs="#lineText_6" />Evviva l'<country>Italia</country>!
+                    <!--contenuto del messaggio-->
+                    <p> 
+                        <s xml:id="lineText-5" facs="#lineText_5">Evviva la Vittoria!</s>
+                        <s xml:id="lineText-6" facs="#lineText_6">Evviva l'<country>Italia</country>!</s>
                     </p>
                     <!--saluto finale e firma-->
-                    <p>
-                        <s xml:id="line-vertical" facs="#line_vertical">
+                    <p xml:id="line-vertical" facs="#line_vertical">
                             <!-- Testo ruotato 90° -->
-                            <lb type="hand_w" style="writing-mode: vertical-rl; text-orientation: sideways" />Mi raccomando quella sola XO <!--(??to)-->
-                            <lb type="stamp_w" style="writing-mode: vertical-lr; text-orientation: sideways" /> 
-                            <orgName key="EFC" type="heliochromy">
-                                Eliocromia 
-                                <persName>
-                                    <surname>Fumagalli</surname>
-                                </persName> 
-                                &amp; C. -
-                                <placeName key="ML">Milano</placeName>
-                            </orgName>
-                        </s>
+                            <s type="hand_w" style="writing-mode: vertical-rl; text-orientation: sideways">Mi raccomando quella sola <unclear reason="illegible" agent="ink" cert="medium">XO</unclear></s>
+                            <s type="stamp_w" style="writing-mode: vertical-lr; text-orientation: sideways"> 
+                                <orgName key="EFC" type="heliochromy">
+                                    Eliocromia 
+                                    <persName>
+                                        <surname>Fumagalli</surname>
+                                    </persName> 
+                                    &amp; C. -
+                                    <placeName key="ML">Milano</placeName>
+                                </orgName>
+                            </s>
                     </p>
                     <closer rend="align(right)">
                         <!-- Firma del mittente -->
@@ -245,40 +255,61 @@
                     </closer>
                 </div>
                 <div type="destination">
-                    <ab n="1">
-                        <!-- Timbro SX -->
-                        <stamp type="postmark">
-                            
-                        </stamp>
-                        <!-- Timbro DX -->
-                        <stamp type="postmark">
-                            
-                        </stamp>
-                        <!-- Francobollo -->
-                        <stamp type="postage" style="transform:rotateZ(180deg);">
-                            <mentioned style="color:red;">
-                                <hi>Poste italiane</hi>
-                                <hi><hi rend="double">10</hi> centesimi <hi rend="double">10</hi></hi>
-                            </mentioned>
-                        </stamp>
-                    </ab>
-                    <ab n="2">
-                        <!--address type="receiver"-->
-                        <address>
-                            <!-- Righe della sezione: Destinatario -->
-                            <addrLine xml:id="lineDest-1" facs="lineDest_1">Capitano    11</addrLine>
-                            <addrLine xml:id="lineDest-2" facs="lineDest_2">
-                                <persName>
-                                    <surname>Cogliola</surname> 
-                                    <forename>Giovanni</forename>
-                                </persName>
-                            </addrLine>
-                            <addrLine xml:id="lineDest-3" facs="lineDest_3">11&#176; Gruppo D'Assalto</addrLine>
-                            <addrLine xml:id="lineDest-4" facs="lineDest_4">2&#7491; Divisione</addrLine>
-                            <addrLine xml:id="lineDest-5" facs="lineDest_5">5&#7491; Compagnia</addrLine>
-                            <addrLine xml:id="lineDest-6" facs="lineDest_6">Faro di Guerra</addrLine>
-                        </address>
-                    </ab>
+                    <div n="1">
+                        <ab>
+                            <!-- Timbro SX -->
+                            <stamp type="postmark" style="transform:rotateZ(45deg);">
+                                <mentioned rend="circle" >
+                                    <gap reason="illegible" agent="ink" atLeast="15" atMost="25" unit="chars"/>
+                                    <mentioned>
+                                        <hi style="text-align:center;">
+                                            <unclear reason="faded" agent="time" cert="medium">10.11.</unclear>
+                                            <gap reason="illegible" agent="faded" atLeast="2" atMost="4" unit="chars"/>
+                                        </hi>
+                                    </mentioned>
+                                </mentioned>
+                            </stamp>
+                            <!-- Timbro DX -->
+                            <stamp type="postmark">
+                                    <mentioned rend="circle" >
+                                    <gap reason="illegible" agent="ink" atLeast="15" atMost="25" unit="chars"/>
+                                    <mentioned>
+                                        <hi style="text-align:center;"> 
+                                            <unclear reason="faded" agent="time" cert="medium">10</unclear>
+                                            <unclear reason="faded" agent="time" cert="low">.11.</unclear>
+                                            <gap reason="illegible" agent="faded" atLeast="2" atMost="4" unit="chars"/>
+                                        </hi>
+                                    </mentioned>
+                                </mentioned>
+                            </stamp>
+                            <!-- Francobollo -->
+                            <stamp type="postage" style="transform:rotateZ(180deg);">
+                                <mentioned style="color:red;">
+                                    <hi>Poste italiane</hi>
+                                    <hi><hi rend="double">10</hi> centesimi <hi rend="double">10</hi></hi>
+                                </mentioned>
+                            </stamp>
+                        </ab>
+                    </div>
+                    <div n="2">
+                        <p>
+                            <!--address type="receiver"-->
+                            <address>
+                                <!-- Righe della sezione: Destinatario -->
+                                <addrLine xml:id="lineDest-1" facs="lineDest_1">Capitano    11</addrLine>
+                                <addrLine xml:id="lineDest-2" facs="lineDest_2">
+                                    <persName>
+                                        <surname>Cogliola</surname> 
+                                        <forename>Giovanni</forename>
+                                    </persName>
+                                </addrLine>
+                                <addrLine xml:id="lineDest-3" facs="lineDest_3">11&#176; Gruppo D'Assalto</addrLine>
+                                <addrLine xml:id="lineDest-4" facs="lineDest_4">2&#7491; Divisione</addrLine>
+                                <addrLine xml:id="lineDest-5" facs="lineDest_5">5&#7491; Compagnia</addrLine>
+                                <addrLine xml:id="lineDest-6" facs="lineDest_6">Faro di Guerra</addrLine>
+                            </address>
+                        </p>
+                    </div>
                 </div>
             </div>
         </body>

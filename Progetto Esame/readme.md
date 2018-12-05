@@ -27,3 +27,8 @@
 > ???
 #### Linking
 > ???
+
+### Validazione con XINCLUDE
+```cmd
+xmllint main.xml --xinclude --postvalid --noout
+```

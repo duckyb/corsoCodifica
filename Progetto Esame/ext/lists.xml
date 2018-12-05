@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="ita">Codifica digiale dei luoghi, persone, organizzazioni {...} presenti nelle cartoline</title>
+<!-- ____________________________ LISTA 1 - RESPONSABILI _______________________ -->
+                <respStmt>
+                    <resp>Codifica di luoghi, persone {...} a cura di</resp>
+                    <name xml:id="CG">Giacomo Cerretini</name>
+                    <name xml:id="DB">Duccio Breschi</name>
+                    <name xml:id="CP">Camilla Poggianti</name>
+                </respStmt>
+<!-- ___________________________________________________________________________ -->
+            </titleStmt>
+            <editionStmt>
+                <edition>Edizione digitale per luoghi, persone, {...}
+                    <date when="2018-12"> Dicembre 2018 </date>
+                </edition>
+                <respStmt>
+                    <resp>Codificato da:<resp/>
+                    <name ref="#CG">G.Cerretini</name>
+                    <name ref="#DB">D.Breschi</name>
+                    <name ref="#CP">C.Poggianti</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Museo di La Spezia</publisher>
+                <pubPlace>La Spezia (SP)</pubPlace>
+                <availability > 
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc >
+<!-- ____________________________ LISTA 2 - PERSONE ____________________________ -->
+                <listPerson>
+                    <head>Lista delle persone</head>
+                    <person xml:id="pGF" >
+                        <persName>
+                            <forename>Giulio</forename>
+                            <surname>Fantoni</surname>
+                        </persName>
+                        <sex>M</sex>
+                    </person>
+                    <person xml:id="pGC" ></person>
+                        <persName>
+                            <roleName>Capitano</roleName>
+                            <forename>Giovanni</forename>
+                            <surname>Cogliola</surname>
+                        </persName>
+                        <sex>M</sex>
+                    </person>
+                    <person xml:id="pF" >
+                        <persName>
+                            <surname>Fumagalli</surname>
+                        </persName>
+                    </person>
+                </listPerson>
+<!-- ____________________________ LISTA 3 - LUOGHI   ___________________________ -->
+                <listPlace>
+                    <head>Lista dei luoghi</head> 
+                    <place xml:id="lRV" >
+                        <placeName ref="http://www.geonames.org/3169561/ravenna.html http://www.treccani.it/enciclopedia/ravenna/">Ravenna</placeName>
+                        <country key="IT" >Italia</country>
+                    </place>
+                    <place xml:id="lMI" >
+                        <placeName ref="http://www.geonames.org/3173435/milan.html http://www.treccani.it/enciclopedia/milano/">Milano</placeName>
+                        <country key="IT" >Italia</country>
+                    </place>
+                </listPlace>
+<!-- ____________________________ LISTA 4 - ORGANIZZAZIONI   ___________________ -->
+                <listOrg>
+                    <head>Lista delle organizzazioni</head>
+                    <org type="teatre" xml:id="oEF"></org>
+                        <orgName>Eliocromia
+                            <persName ref="pF">Fumagalli</persName> &amp; C.
+                        </orgName>
+                    	<placeName ref="#MI">Milano</placeName>
+                    </org>
+                </listOrg>
+<!-- ___________________________________________________________________________ -->
+                <bibl   >
+                    <author>
+                        <persName >
+                            <forename >
+                            <surname />
+                        </persName>
+                    </author>
+                    <date when="" />
+                    <publisher/>
+                    <pubPlace/>
+                </bibl>
+                <msDesc ></msDesc>
+                    <msIdentifier>
+                        <country/>
+                        <settlement />
+                        <idno />
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <textLang mainLang=""/>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <stamp />
+                                    <stamp />
+                                    <p />
+                                </support>
+                                <extent>
+                                    <measure unit="" quantity=""/>
+                                    <dimensions unit="">
+                                        <height/>
+                                        <width/>
+                                    </dimensions>
+                                </extent>
+                                <condition>
+                                    <p />
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <p />
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc >
+                <correspAction >
+                    <persName   />
+                    <placeName  />
+                    <date when="" />
+                </correspAction>
+                <correspAction >
+                    <persName   />
+                    <placeName  />
+                    <date when="" />
+                </correspAction>
+            </correspDesc>
+            <langUsage >
+                <language ident=""/>
+            </langUsage>
+        </profileDesc>
+        <encodingDesc>
+            <p />
+        </encodingDesc>
+        <revisionDesc >
+            <change when="" />
+            <change when="" />
+        </revisionDesc>
+    </teiHeader>
+</TEI>
