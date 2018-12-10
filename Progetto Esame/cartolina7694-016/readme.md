@@ -9,7 +9,7 @@
         <td>
             Auguri vivissimi e buone feste<br/>
             unitamente alla famiglia<br/>
-            Marino Ginevra Nino<br/>
+            Mario Ginevra Nino<br/>
             Milano 22-3
         </td>
         <td>

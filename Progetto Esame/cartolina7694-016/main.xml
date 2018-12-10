@@ -1,251 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE TEI SYSTEM "../teiCustom.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <!DOCTYPE TEI SYSTEM "tei-all.dtd">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang=""/>
-                <author xml:id=""/>
+                <title xml:lang="ita">Mario Ginevra Nino, a Antonietta e Oliva, Milano, 22 Marzo 1913</title>
+                <author ref="#pM">Mario</author>
+                <author ref="#pG">Ginevra</author>
+                <author ref="#pN">Nino</author>
                 <respStmt>
-                    <resp/>
-                    <name xml:id=""/>
-                    <name xml:id=""/>
-                    <name xml:id=""/>
+                    <resp>Trascrizione a cura di</resp>
+                    <persName ref="#GC">Giacomo Cerretini</persName>
+                    <persName ref="#DB">Duccio Breschi</persName>
+                    <persName ref="#CP">Camilla Poggianti</persName>                
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <edition><!-- ??Note: modificare quando daremo esame -->
-                    <date when=""/>
+                <edition>Edizione digitale
+                    <!-- ??Note: modificare quando daremo esame -->
+                    <date when="2018-12">Dicembre 2018</date>
                 </edition>
                 <respStmt>
-                    <resp/>
-                    <name ref=""/>
-                    <name ref=""/>
-                    <name ref=""/>
+                    <resp>Codificato da</resp>
+                    <persName ref="#CP">C.Poggianti</persName>
+                    <persName ref="#DB">D.Breschi</persName>
+                    <persName ref="#GC">G.Cerretini</persName>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
-                <publisher/>
-                <pubPlace/>
+                <publisher>Museo di La Spezia</publisher>
+                <pubPlace>La Spezia(SP)</pubPlace>
                 <availability>
-                    <licence target=""/>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <bibl type="">
-                    <author><!-- autore (mittente) della cartolina -->
-                        <persName ref="">
-                            <forename/>
-                            <surname/>
-                        </persName>
+                <bibl type="postcard">
+                    <author>
+                        <!-- autore (mittente) della cartolina -->
+                        <persName ref="#pM">Mario</persName>
+                        <persName ref="#pG">Ginevra</persName>
+                        <persName ref="#pN">Nino</persName>
                     </author>
                     <!-- editore della cartolina -->
-                    <date xml:id="" when=""/>
-                    <publisher/>
-                    <pubPlace/>
+                    <date xml:id="postcard_date_016" when="1913-03-22">22 Marzo 1913</date>
+                    <!-- ?? editore della pubblicazione -->
+                    <!-- <publisher ref="#oEF">Eliocromia Fumagalli &amp; C</publisher>
+                    <pubPlace ref="#pMI">Milano</pubPlace> -->
                 </bibl>
                 <msDesc>
                     <msIdentifier>
-                        <country/>
-                        <settlement xml:id=""/>
-                        <idno type=""/>
+                        <country ref="#lIT">Italia</country>
+                        <settlement ref="#lMI">Milano</settlement>
+                        <idno type="postcard_id">7694_016</idno>
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <textLang xml:id="" mainLang=""/>
+                            <textLang mainLang="ita">Italiano</textLang>
                         </msItem>
                     </msContents>
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
                                 <support>
-                                    <material/>
+                                    <material>Cartoncino</material>
                                     <!-- descrizione fisica dei timbri -->
-                                    <stamp type=""/>
+                                    <stamp type="postmark"> 
+                                        Sul retro, nella metà destra della cartolina, è presente il timbro circolare di partenza. 
+                                        Sul fronte, in alto a destra, sono presenti due presunti timbri circolari:
+                                        il primo più in alto, parzialmente visibile per 1/4; il secondo, leggermente sotto il primo, totalmente illeggibile.
+								    </stamp>
                                     <!-- descrizione fisica del francobollo -->
-                                    <stamp type=""/>
+                                    <stamp type="postage"> 
+                                         Francobollo di dimensione rettangolare color verde scuro, parzialmente coperto dall'annullo postale.
+                                    </stamp>
                                     <!-- descrizione fisica della cartolina -->
-                                    <p/>
+                                    <p>
+                                        Cartolina in buone condizioni fisiche, sul verso è presente testo manoscritto in inchiostro nero su cartoncino color avorio, sul retro è presente una fotografia d'epoca. 
+                                        Sulla parte posteriore, il testo è scritto su due colonne le quali dividono mittenti e destinatari, il francobollo e il timbro di partenza;
+                                        La parte frontale presenta l'immagine, le informazioni editoriali e nell'angolo in alto a destra sono presenti due timbri.
+                                    </p>
                                 </support>
                                 <!-- grandezza appossimativa del documento elettronico -->
                                 <extent>
-                                    <measure type="" unit="" quantity=""/>
-                                    <dimensions unit="">
-                                        <height/>
-                                        <width/>
+                                    <measure type="composition" unit="folio" quantity="1">1</measure>
+                                    <dimensions unit="mm" xml:id="note_dimension2">
+                                        <height>91</height>
+                                        <width>140</width>
                                     </dimensions>
                                 </extent>
                                 <!-- descrizione delle condizioni fisiche di conservazione della cartolina -->
                                 <condition>
-                                    <p/>
+                                    <p>Cartolina in discrete condizioni fisiche, eccetto i timbri dei quali è solo parzialmente leggibile quello sul retro.</p>
                                 </condition>
                             </supportDesc>
                         </objectDesc>
                         <!-- descrizione del tipo di scrittura usato nella cartolina -->
                         <handDesc>
-                            <p/>
+                            <p>La cartolina presenta porzioni di testo stampato sul fronte, e del testo scritto a mano dal mittente.</p>
                         </handDesc>
                     </physDesc>
-                    <!-- ??Note: Completare o rimuovere <additional /> -->
-                    <!-- <additional>
-						<adminInfo>
-							<note></note>
-						</adminInfo>
-					</additional> -->
                 </msDesc>
             </sourceDesc>
-            <!-- ??Note: Da revisionare -->
-            <!-- <xenoData></xenoData> -->
         </fileDesc>
-        <profileDesc>
-            <correspDesc>
-                <correspAction type="">
-                    <persName ref="" role=""/>
-                    <placeName ref=""/>
-                    <date when=""/>
-                </correspAction>
-                <correspAction type="">
-                    <persName xml:id="" role=""/>
-                    <placeName xml:id=""/>
-                    <date when=""/>
-                </correspAction>
-            </correspDesc>
-            <langUsage><!--language ref="lang_ITA">Italiano</language-->
-                <language ident=""/>
-            </langUsage>
-        </profileDesc>
-        <encodingDesc>
-            <p/>
-        </encodingDesc>
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#pM">Mario</persName>
+                        <persName ref="#pG">Ginevra</persName>
+                        <persName ref="#pN">Nino</persName>
+                        <placeName ref="#lMI">Milano</placeName>
+                        <date when="1913-03-22">22 Marzo 1913</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#pAT">Antonietta Turtura</persName>
+                        <persName ref="#pOT">Oliva Turtura</persName>
+                        <placeName ref="#lRV">Ravanna</placeName>
+                        <location type="address">
+                            <address>
+                                <addrLine>Via Gir.Rossi N.60</addrLine>
+                            </address>
+                        </location>                            
+                    </correspAction>
+                </correspDesc>
+                <langUsage>
+                    <!--language ref="lang_ITA">Italiano</language-->
+                    <language ident="it-IT">Italiano</language>
+                </langUsage>
+            </profileDesc>
+            <encodingDesc>
+                <p>
+                    Sono state rispettate le forme lessicali, la punteggiatura e la sillabazione del documento, 
+                    normalizzando il tutto per la codifica.
+                </p>
+            </encodingDesc>
         <revisionDesc>
-            <change when="" resp=""/>
-            <change when="" resp=""/>
+            <change when="2018-12-10" resp="#CP #DB #CG">Compilazione della TeiHeader, inizio e fine della codifica della cartolina.</change>
         </revisionDesc>
     </teiHeader>
     <!-- ...................................... T E X T ...................................... -->
-    <facsimile><!-- zonazione retro della cartolina -->
-        <surface><!--graphic xml:id="retro_postcard" start="#retro-postcard" url="'retro.jpg'" width="'1628px'" height="'1053px'" /-->
-            <graphic xml:id="" url="" width="" height=""/>
-            <!-- prima pagina, lato sx -->
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <!-- Eliocromia fumagalli -->
-            <zone xml:id="" start="" ulx="" uly="" lrx="" lry=""/>
-            <!-- seconda pagina - testo -->
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <zone xml:id="" start="" points=""/>
-            <!-- 11 -->
-            <zone xml:id="" start="" ulx="" uly="" lrx="" lry=""/>
-            <!-- 1006 -->
-            <zone xml:id="" start="" ulx="" uly="" lrx="" lry=""/>
-            <!-- timbro SX -->
-            <zone xml:id="" start="" points=""/>
-            <!-- timbro DX e francobollo-->
-            <zone xml:id="" start="" points=""/>
+    <facsimile>
+        <!-- zonazione retro della cartolina -->
+        <surface>
+            <graphic xml:id="retro_postcard_016" url='retro.jpg' width='1651px' height='1081px' />
+            <!-- auguri vivissimi e buone feste -->
+            <zone xml:id="lineText_1_016" points = ' 713,14 728,92 661,186 677,274 688,408 679,680 717,908 664,1026 612,1050 527,905 557,681 515,436 497,197 569,18 ' />
+            <!-- unitamente alla famiglia -->
+            <zone xml:id="lineText_2_016" points = ' 429,38 469,41 523,145 479,244 519,468 535,620 532,829 480,901 425,901 357,788 388,625 424,588 ' />
+            <!-- Mario Ginevra Nino -->
+            <zone xml:id="lineText_3_016" points = ' 288,45 397,126 396,418 393,738 339,822 296,818 281,470 225,465 245,409 285,346 273,58 ' />
+            <!-- Milano 22-3 -->
+            <zone xml:id="lineText_4_016" points = ' 16,383 60,386 75,534 196,536 163,717 84,729 73,830 115,854 116,1045 36,1080 ' />
+
+            <!-- 16 -->
+            <zone xml:id="number16_016" points = ' 1184,38 1145,98 1185,117 1245,110 1233,34 ' />
+            <!-- stamp & postmark -->
+            <zone xml:id="stamp_016" points = ' 1380,2 1301,36 1288,165 1317,341 1491,356 1635,262 1645,133 1576,1 ' />
+
+            <!-- Gent.me Signorine -->
+            <zone xml:id="lineDest_1_016" points = ' 837,486 769,425 753,321 792,228 863,234 860,304 924,330 971,298 1027,296 1036,332 1121,321 1165,204 1195,210 1185,362 1459,382 1451,426 1260,424 1243,506 1207,502 1203,424 1087,409 1037,341 969,340 955,424 849,430 ' />
+            <!-- Antonietta ed Oliva Turtura -->
+            <zone xml:id="lineDest_2_016" points = ' 736,525 747,554 801,565 857,549 1624,558 1649,576 1649,553 1637,506 1557,509 1556,473 1495,410 1409,444 1397,477 1332,449 1265,444 1255,493 1227,493 1191,460 1044,472 1029,456 941,488 940,462 879,461 875,410 853,412 829,490 ' />
+            <!-- Via Gir. Rossi N.60 -->
+            <zone xml:id="lineDest_3_016" points = ' 816,690 855,594 827,594 788,706 752,673 715,720 729,746 760,741 765,796 873,797 875,849 909,849 912,797 1080,824 1073,884 1111,888 1124,800 1299,796 1363,769 1360,718 1317,682 1273,658 1041,668 927,708 917,666 876,674 ' />
+            <!-- Ravenna -->
+            <zone xml:id="lineDest_4_016" points = ' 1080,977 1085,890 1165,810 1228,820 1201,912 1287,914 1320,858 1348,860 1332,917 1463,926 1473,909 1503,910 1567,996 1536,1013 1469,980 1223,985 1268,1013 1225,1030 1163,988 ' />
         </surface>
         <!-- immagine | fronte della cartolina -->
         <surface>
-            <graphic xml:id="" url="" width="" height=""/>
-            <!-- firma dell'autore dell'immagine -->
-            <zone xml:id="" start="" ulx="" uly="" lrx="" lry=""/>
+            <graphic xml:id="front_postcard_016" url='fronte.jpg' width='1071px' height='1650px' />
+            <!-- fotografia -->
+            <zone xml:id="image_016" points = ' 915,16 973,78 975,191 912,187 876,99 ' />
+            <!-- timbro postale -->
+            <zone xml:id="stampFront_016" ulx="35" uly="50" lrx="1029" lry="1594" />
+            <!-- 165 - Edizione (P.Rys -->
+            <zone xml:id="subtitle_016" ulx="349" uly="1614" lrx="709" lry="1643" />
         </surface>
     </facsimile>
-    <text xml:lang=""><!-- timbri e francobolli -->
-        <front/>
-        <body><!-- ............ FRONTE | IMG | RECTO ............ -->
-            <div type="">
-                <figure><!-- Descrizione dell'immagine in linguaggio naturale -->
-                    <figDesc/>
+    <text xml:lang="it">
+        <body>
+            <!-- ............ FRONTE | IMG | RECTO ............ -->
+            <div type="recto">
+                <figure>
+                    <!-- Descrizione dell'immagine in linguaggio naturale -->
+                    <figDesc>
+                        Sul fronte della cartolina una fotografia color sepia ritrae un uomo anziano e una bambina, seduti su una panchina in un parco o cortile, intenti a leggere un libro.
+                        L'uomo ha i capelli bianchi e gli occhiali, con la mano destra sorregge il libro mentre la sinistra è poggiata sulla spalla della bambina.
+                        La bambina piega verso di sé il libro con la mano sinistra, indossa un vestito bianco e delle calze scure.
+                        Dietro le due figure, in secondo piano, un albero copre la maggior parte dello sfondo. Dietro di esso si scorge una staccionata, altri alberi e un cielo sereno.
+                    </figDesc>
                 </figure>
+                 <!-- Timbri -->
+                 <ab>
+                    <!-- Timbro.1 -->
+                    <stamp type="postmark">
+                        <mentioned rend="circle">
+                            <gap reason="illegible" agent="faded" unit="chars"/>
+                        </mentioned>
+                    </stamp>
+                    <!-- Timbro.2 -->
+                    <stamp type="postmark">
+                        <mentioned rend="circle">
+                            <gap reason="illegible" agent="faded" unit="chars"/>
+                        </mentioned>
+                    </stamp>
+                </ab>
             </div>
             <!-- ............ RETRO | TEXT | VERSO ............ -->
-            <div type="" xml:id="" facs="">
-                <div type=""><!--luogo e data di scrittura della cartolina-->
-                    <opener xml:id="" facs="">
-                        <dateline rend="">
-                            <placeName ref=""/>
-                            <date when=""/>
-                        </dateline>
-                        <salute>
-                            <lb xml:id="" facs=""/>
-                            <lb xml:id="" facs=""/>
-                            <lb xml:id="" facs=""/>
-                            <lb xml:id="" facs=""/>
-                        </salute>
-                    </opener>
-                    <!--saluto iniziale-->
-                    <!--contenuto del messaggio-->
+            <div type="verso" xml:id="retro-postcard" facs="retro_postcard">
+                <div type="message">
+                    <!--luogo e data di scrittura della cartolina-->
                     <p>
-                        <lb xml:id="" facs=""/>
-                        <lb xml:id="" facs=""/>
-                        <country/>
-                    </p>
-                    <!--saluto finale e firma-->
-                    <p>
-                        <s xml:id="" facs=""><!-- Testo ruotato 90° -->
-                            <lb type="" style=""/>
-                            <!--(??to)-->
-                            <lb type="" style=""/>
-                            <orgName key="" type="">
-                                <persName>
-                                    <surname/>
-                                </persName>
-                                <placeName key=""/>
-                            </orgName>
+                        <s>
+                            <lb xml:id="lineText-1-016" facs="#lineText_1_016" style="writing-mode: vertical-lr; text-orientation: sideways" />Auguri vivissimi e buone feste
+                            <lb xml:id="lineText-2-016" facs="#lineText_2_016" style="writing-mode: vertical-lr; text-orientation: sideways" />unitamente alla famiglia
                         </s>
                     </p>
-                    <closer rend=""><!-- Firma del mittente -->
-                        <lb xml:id="" facs=""/>
-                        <signed xml:id="" facs="">
-                            <persName ref="">
-                                <forename/>
-                                <surname/>
-                            </persName>
+                    <closer>
+                        <lb />
+                        <signed xml:id="lineText-3-016" facs="#lineText_3_016" style="writing-mode: vertical-lr; text-orientation: sideways">
+                            <persName ref="pM">Mario</persName> 
+                            <persName ref="pG">Ginevra</persName>
+                            <persName ref="pN">Nino</persName>
                         </signed>
+                        <lb />
+                        <dateline xml:id="lineText-4-016" facs="#lineText_4_016" style="writing-mode: vertical-lr; text-orientation: sideways">
+                            <placeName ref="#lMI">Milano</placeName> 
+                            <date when="1913-03-22">22-3</date>
+                        </dateline>
                     </closer>
                 </div>
-                <div type="">
-                    <ab n=""><!-- Timbro SX -->
-                        <stamp type=""/>
-                        <!-- Timbro DX -->
-                        <stamp type=""/>
-                        <!-- Francobollo -->
-                        <stamp type="" style="">
-                            <mentioned style="">
-                                <hi/>
-                                <hi>
-                                    <hi rend=""/>
-                                    <hi rend=""/>
-                                </hi>
-                            </mentioned>
-                        </stamp>
-                    </ab>
-                    <ab n=""><!--address type="receiver"-->
-                        <address><!-- Righe della sezione: Destinatario -->
-                            <addrLine xml:id="" facs=""/>
-                            <addrLine xml:id="" facs="">
-                                <persName>
-                                    <surname/>
-                                    <forename/>
-                                </persName>
-                            </addrLine>
-                            <addrLine xml:id="" facs=""/>
-                            <addrLine xml:id="" facs=""/>
-                            <addrLine xml:id="" facs=""/>
-                            <addrLine xml:id="" facs=""/>
-                        </address>
-                    </ab>
+                <!-- <div type="stamp_info">
+                    <ab xml:id="line-1006" type="stamp_w" facs="#line_1006"><num type="cardinal" value="1006">1006</num></ab>
+                </div> -->
+                <div type="destination">
+                    <div n="1">
+                        <ab>
+                            <!-- Timbro -->
+                            <stamp type="postmark">
+                                <mentioned rend="circle">
+                                    <gap reason="illegible" agent="ink faded" unit="chars"/>
+                                    <mentioned>
+                                        <hi style="text-align:center;">
+                                            <unclear reason="faded" agent="time" cert="high">22.3.13.22</unclear>
+                                        </hi>
+                                    </mentioned>
+                                </mentioned>
+                            </stamp>
+                            <!-- Francobollo -->
+                            <stamp type="postage">
+                                <mentioned style="color:green;">
+                                    <orgName ref="#oPI">Poste italiane</orgName>
+                                    <hi><num rend="double" type="cardinal" value="5">5</num> centesimi <num rend="double" type="cardinal" value="5">5</num></hi>
+                                </mentioned>
+                            </stamp>
+                        </ab>
+                    </div>
+                    <div n="2">
+                        <p>
+                            <!--address type="receiver"-->
+                            <address>
+                                <!-- Righe della sezione: Destinatario -->
+                                <addrLine xml:id="lineDest-1-016" facs="lineDest_1">Gent.<hi rend="underline superscript">me</hi> Signorine</addrLine>
+                                <addrLine xml:id="lineDest-2-016" facs="lineDest_2"><persName ref="#pAT">Antonietta</persName> ed <persName ref="pOT">Oliva</persName> Turtura</addrLine>
+                                <addrLine xml:id="lineDest-4-016" facs="lineDest_3">Via Gir. Rossi <hi rend="double-strikethrough">N</hi>.60</addrLine>
+                                <addrLine xml:id="lineDest-5-016" facs="lineDest_4" rend="underline">Ravenna</addrLine>
+                            </address>
+                            <add xml:id="note_1_016" cert="medium">
+                                <num type="cardinal" value="16">16</num>
+                            </add>
+                        </p>
+                    </div>
                 </div>
             </div>
         </body>

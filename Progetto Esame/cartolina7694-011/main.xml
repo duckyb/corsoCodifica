@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE TEI SYSTEM "../teiCustom.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title xml:lang="ita">Giulio Fantoni al capitano Cogliola Giovanni, Ravenna, 9 Novembre 1918</title>
-                <author xml:id="auth_GF">Giulio Fantoni</author>
+                <author ref="#pGF">Giulio Fantoni</author>
                 <respStmt>
                     <resp>Trascrizione a cura di</resp>
-                    <name xml:id="GC">Giacomo Cerretini</name>
-                    <name xml:id="DB">Duccio Breschi</name>
-                    <name xml:id="CP">Camilla Poggianti</name>                
+                    <persName ref="#GC">Giacomo Cerretini</persName>
+                    <persName ref="#DB">Duccio Breschi</persName>
+                    <persName ref="#CP">Camilla Poggianti</persName>                
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -20,9 +20,9 @@
                 </edition>
                 <respStmt>
                     <resp>Codificato da</resp>
-                    <name ref="#CP">C.Poggianti</name>
-                    <name ref="#DB">D.Breschi</name>
-                    <name ref="#GC">G.Cerretini</name>
+                    <persName ref="#CP">C.Poggianti</persName>
+                    <persName ref="#DB">D.Breschi</persName>
+                    <persName ref="#GC">G.Cerretini</persName>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
@@ -36,20 +36,17 @@
                 <bibl type="postcard">
                     <author>
                         <!-- autore (mittente) della cartolina -->
-                        <persName ref="#auth_GF">
-                            <forename>Giulio</forename>
-                            <surname>Fantoni</surname>
-                        </persName>
+                        <persName ref="#pGF">Giulio Fantoni</persName>
                     </author>
                     <!-- editore della cartolina -->
                     <date xml:id="postcard_date" when="1918-11-9">09 Novembre 1918</date>
-                    <publisher>Eliocromia Fumagalli &amp; C</publisher>
-                    <pubPlace>Milano</pubPlace>
+                    <publisher ref="#oEF">Eliocromia Fumagalli &amp; C</publisher>
+                    <pubPlace ref="#pMI">Milano</pubPlace>
                 </bibl>
                 <msDesc>
                     <msIdentifier>
-                        <country>Italia</country>
-                        <settlement xml:id="loc_RV">Ravenna</settlement>
+                        <country ref="#lIT">Italia</country>
+                        <settlement ref="#lRV">Ravenna</settlement>
                         <idno type="postcard_id">7694_011</idno>
                     </msIdentifier>
                     <msContents>
@@ -77,13 +74,13 @@
                                     <p>
                                         Cartolina in buone condizioni fisiche, con testo solo sul verso e retro con dipinto d'autore. Cartoncino senza filigrana, colore avorio, con testo in inchiostro nero. 
                                         La parte retro presenta l’indirizzo, il testo scritto su due colonne le quali dividono mittente e destinatario,  il francobollo, il timbro di partenza e il timbro di arrivo; 
-                                        La parte fronte presenta una rappresentazione artischita. 
+                                        La parte fronte presenta una rappresentazione artistica. 
                                     </p>
                                 </support>
                                 <!-- grandezza appossimativa del documento elettronico -->
                                 <extent>
                                     <measure type="composition" unit="folio" quantity="1">1</measure>
-                                    <dimensions unit="mm">
+                                    <dimensions unit="mm" xml:id="note_dimension1">
                                         <height>89</height>
                                         <width>138</width>
                                     </dimensions>
@@ -113,13 +110,13 @@
             <profileDesc>
                 <correspDesc>
                     <correspAction type="sent">
-                        <persName ref="#auth_GF" role="composer">Giulio Fantoni</persName>
-                        <placeName ref="loc_RV">Ravenna</placeName>
+                        <persName ref="#pGF">Giulio Fantoni</persName>
+                        <placeName ref="#lRV">Ravenna</placeName>
                         <date when="1918-11-10">10 Novembre 1918</date>
                     </correspAction>
                     <correspAction type="received">
-                        <persName xml:id="rec_CG" role="captain">Cogliola Giovanni</persName>
-                        <placeName xml:id="loc_GDC">11&#176; Gruppo D'Assalto, 2&#7491; Divisione, 5&#7491; Compagnia</placeName>
+                        <persName ref="#pGC" role="captain">Cogliola Giovanni</persName>
+                        <placeName ref="#oGDCF">11&#176; Gruppo D'Assalto, 2&#7491; Divisione, 5&#7491; Compagnia</placeName>
                         <date when="1918-11-10">10 Novembre 1918</date>
                     </correspAction>
                 </correspDesc>
@@ -137,6 +134,8 @@
         <revisionDesc>
             <change when="2018-11-28" resp="#CP #DB #CG">Inizio creazione teiHeader e bozza dati spedizione.</change>
             <change when="2018-12-03" resp="#CP #DB #CG">Fine teiHeader, realizzazione delle zone e facsimili, inizio codifica del retro della cartolina.</change>
+            <change when="2018-12-05" resp="#CP #DB #CG">Piccoli accorgimenti finali.</change>
+            <change when="2018-12-10" resp="#CP #DB #CG">Fine codifica cartolina, piccole correzioni di attributi.</change>
         </revisionDesc>
     </teiHeader>
     <!-- ...................................... T E X T ...................................... -->
@@ -144,46 +143,44 @@
         <!-- zonazione retro della cartolina -->
         <surface>
             <!--graphic xml:id="retro_postcard" start="#retro-postcard" url="'retro.jpg'" width="'1628px'" height="'1053px'" /-->
-            <graphic xml:id="retro_postcard" url="'retro.jpg'" width="'1628px'" height="'1053px'" />
+            <graphic xml:id="retro_postcard_011" url="'retro.jpg'" width="'1628px'" height="'1053px'" />
             <!-- prima pagina, lato sx -->
             <zone xml:id="line_PlaceDate" start="#line-PlaceDate" points="' 190,165 261,32 301,41 298,83 499,88 573,28 742,10 851,51 755,169 637,161 598,229 477,191 429,155 273,161 247,205 '" />
-            <zone xml:id="lineText_1" start="#lineText-1" points="' 90,349 61,317 104,236 199,174 177,264 290,232 501,222 783,241 755,310 425,328 '" />
-            <zone xml:id="lineText_2" start="#lineText-2" points="' 69,403 140,314 293,338 387,323 519,316 501,373 661,368 705,325 755,377 698,427 349,436 100,430 '" />
-            <zone xml:id="lineText_3" start="#lineText-3" points="' 83,562 73,522 162,435 198,436 167,488 305,487 348,445 372,450 369,482 643,490 664,435 754,432 680,550 587,569 '" />
-            <zone xml:id="lineText_4" start="#lineText-4" points="' 75,623 124,585 227,597 252,567 274,570 276,592 496,590 530,555 567,561 534,608 612,596 702,553 721,606 668,652 453,675 87,657 '" />
-            <zone xml:id="lineText_5" start="#lineText-5" points="' 66,726 162,670 214,684 203,722 315,724 340,686 366,687 365,721 478,711 516,680 683,670 805,684 850,688 884,658 909,678 823,768 547,763 224,782 87,782 '" />
-            <zone xml:id="lineText_6" start="#lineText-6" points="' 68,792 139,768 166,802 243,799 266,785 451,768 601,765 779,780 876,772 804,872 361,863 186,876 0,913 0,858 '" />
-            <zone xml:id="lineText_7" start="#lineText-7" points="' 168,959 160,910 236,878 316,872 399,903 648,898 802,936 744,972 499,960 '" />
-            <zone xml:id="lineText_8" start="#lineText-8" points="' 87,1053 90,1031 314,958 526,999 597,958 623,961 573,1001 710,1009 782,988 888,996 839,1053 '" />
+            <zone xml:id="lineText_1_011" start="#lineText-1" points="' 90,349 61,317 104,236 199,174 177,264 290,232 501,222 783,241 755,310 425,328 '" />
+            <zone xml:id="lineText_2_011" start="#lineText-2" points="' 69,403 140,314 293,338 387,323 519,316 501,373 661,368 705,325 755,377 698,427 349,436 100,430 '" />
+            <zone xml:id="lineText_3_011" start="#lineText-3" points="' 83,562 73,522 162,435 198,436 167,488 305,487 348,445 372,450 369,482 643,490 664,435 754,432 680,550 587,569 '" />
+            <zone xml:id="lineText_4_011" start="#lineText-4" points="' 75,623 124,585 227,597 252,567 274,570 276,592 496,590 530,555 567,561 534,608 612,596 702,553 721,606 668,652 453,675 87,657 '" />
+            <zone xml:id="lineText_5_011" start="#lineText-5" points="' 66,726 162,670 214,684 203,722 315,724 340,686 366,687 365,721 478,711 516,680 683,670 805,684 850,688 884,658 909,678 823,768 547,763 224,782 87,782 '" />
+            <zone xml:id="lineText_6_011" start="#lineText-6" points="' 68,792 139,768 166,802 243,799 266,785 451,768 601,765 779,780 876,772 804,872 361,863 186,876 0,913 0,858 '" />
+            <zone xml:id="lineText_7_011" start="#lineText-7" points="' 168,959 160,910 236,878 316,872 399,903 648,898 802,936 744,972 499,960 '" />
+            <zone xml:id="lineText_8_011" start="#lineText-8" points="' 87,1053 90,1031 314,958 526,999 597,958 623,961 573,1001 710,1009 782,988 888,996 839,1053 '" />
             <!-- Eliocromia fumagalli -->
             <zone xml:id="line_vertical" start="#line-vertical" ulx="18" uly="18" lrx="90" lry="776" />
             <!-- seconda pagina - testo -->
-            <zone xml:id="lineDest_1" start="#lineDest-1" points="' 942,359 1160,410 1366,437 1280,497 946,508 871,563 851,559 896,503 783,502 '" />
-            <zone xml:id="lineDest_2" start="#lineDest-2" points="' 897,643 786,636 805,605 915,537 946,540 916,587 984,583 1047,534 1091,536 1091,587 1112,581 1152,537 1201,542 1171,581 1206,584 1336,525 1409,548 1394,587 1459,578 1579,595 1602,561 1627,564 1627,647 1431,622 1244,638 1185,709 1149,698 1142,636 952,644 919,683 892,675 '" />
-            <zone xml:id="lineDest_3" start="#lineDest-3" points="' 921,722 971,664 1052,658 1108,640 1128,642 1106,680 1300,668 1304,635 1399,631 1428,647 1494,646 1603,651 1627,664 1627,724 1408,716 1244,733 1183,739 1060,717 1026,753 '" />
-            <zone xml:id="lineDest_4" start="#lineDest-4" points="' 918,799 885,779 899,724 984,731 1030,752 1045,714 1113,712 1119,739 1310,726 1417,716 1583,779 1570,800 1225,778 1046,790 '" />
-            <zone xml:id="lineDest_5" start="#lineDest-5" points="' 880,846 936,795 1107,778 1118,797 1101,817 1263,806 1372,811 1507,791 1554,817 1533,857 1295,882 1156,886 888,864 '" />
-            <zone xml:id="lineDest_6" start="#lineDest-6" points="' 1013,985 1021,934 1140,888 1285,856 1286,869 1200,922 1336,929 1308,885 1359,879 1406,903 1533,863 1552,873 1494,925 1596,918 1627,929 1627,983 1490,974 1392,1001 1359,973 1134,980 1100,996 1041,1002 '" />
-            <zone xml:id="lineDest_7" start="#lineDest-7" points="' 1465,470 1492,422 1545,413 1557,480 1496,492 '" />
+            <zone xml:id="lineDest_1_011" start="#lineDest-1" points="' 942,359 1160,410 1366,437 1280,497 946,508 871,563 851,559 896,503 783,502 '" />
+            <zone xml:id="lineDest_2_011" start="#lineDest-2" points="' 897,643 786,636 805,605 915,537 946,540 916,587 984,583 1047,534 1091,536 1091,587 1112,581 1152,537 1201,542 1171,581 1206,584 1336,525 1409,548 1394,587 1459,578 1579,595 1602,561 1627,564 1627,647 1431,622 1244,638 1185,709 1149,698 1142,636 952,644 919,683 892,675 '" />
+            <zone xml:id="lineDest_3_011" start="#lineDest-3" points="' 921,722 971,664 1052,658 1108,640 1128,642 1106,680 1300,668 1304,635 1399,631 1428,647 1494,646 1603,651 1627,664 1627,724 1408,716 1244,733 1183,739 1060,717 1026,753 '" />
+            <zone xml:id="lineDest_4_011" start="#lineDest-4" points="' 918,799 885,779 899,724 984,731 1030,752 1045,714 1113,712 1119,739 1310,726 1417,716 1583,779 1570,800 1225,778 1046,790 '" />
+            <zone xml:id="lineDest_5_011" start="#lineDest-5" points="' 880,846 936,795 1107,778 1118,797 1101,817 1263,806 1372,811 1507,791 1554,817 1533,857 1295,882 1156,886 888,864 '" />
+            <zone xml:id="lineDest_6_011" start="#lineDest-6" points="' 1013,985 1021,934 1140,888 1285,856 1286,869 1200,922 1336,929 1308,885 1359,879 1406,903 1533,863 1552,873 1494,925 1596,918 1627,929 1627,983 1490,974 1392,1001 1359,973 1134,980 1100,996 1041,1002 '" />
+            <zone xml:id="lineDest_7_011" start="#lineDest-7" points="' 1465,470 1492,422 1545,413 1557,480 1496,492 '" />
             <!-- 11 -->
-            <zone xml:id="line_11" start="#line-11" ulx="18" uly="18" lrx="90" lry="776" />
+            <zone xml:id="line_11_011" start="#line-11" ulx="18" uly="18" lrx="90" lry="776" />
             <!-- 1006 -->
-            <zone xml:id="line_1006" start="#line-1006" ulx="776" uly="980" lrx="832" lry="1005" />
+            <zone xml:id="line_1006_011" start="#line-1006" ulx="776" uly="980" lrx="832" lry="1005" />
             <!-- timbro SX -->
-            <zone xml:id="stamp_left" start="#stamp-left" points="' 817,1 770,79 769,176 827,267 934,313 1044,281 1109,201 1115,101 1067,3 '" />
+            <zone xml:id="stamp_left_011" start="#stamp-left" points="' 817,1 770,79 769,176 827,267 934,313 1044,281 1109,201 1115,101 1067,3 '" />
             <!-- timbro DX e francobollo-->
-            <zone xml:id="stamp_right" start="#stamp-right" points="' 1422,21 1304,24 1303,52 1254,113 1236,213 1273,301 1356,365 1455,367 1537,321 1579,223 1577,141 1555,92 1554,27 '" />
+            <zone xml:id="stamp_right_011" start="#stamp-right" points="' 1422,21 1304,24 1303,52 1254,113 1236,213 1273,301 1356,365 1455,367 1537,321 1579,223 1577,141 1555,92 1554,27 '" />
         </surface>
         <!-- immagine | fronte della cartolina -->
         <surface>
-            <graphic xml:id="fronte_postcard" url="'fronte.jpg'" width="'1058px'" height="'1639px'" />
+            <graphic xml:id="fronte_postcard_011" url="'fronte.jpg'" width="'1058px'" height="'1639px'" />
             <!-- firma dell'autore dell'immagine -->
-            <zone xml:id="picture_sig" start="#picture-sign" ulx="2" uly="1599" lrx="181" lry="1639" />
+            <zone xml:id="picture_sig_011" start="#picture-sign" ulx="2" uly="1599" lrx="181" lry="1639" />
         </surface>
     </facsimile>
     <text xml:lang="it">
-        <!-- timbri e francobolli -->
-        <front></front>
         <body>
             <!-- ............ FRONTE | IMG | RECTO ............ -->
             <div type="recto">
@@ -196,56 +193,53 @@
                 </figure>
             </div>
             <!-- ............ RETRO | TEXT | VERSO ............ -->
-            <div type="verso" xml:id="retro-postcard" facs="retro_postcard">
+            <div type="verso" xml:id="retro-postcard-011" facs="retro_postcard_011">
                 <div type="message">
                     <!--luogo e data di scrittura della cartolina-->
                     <opener xml:id="line-PlaceDate" facs="line_PlaceDate">
                         <dateline rend="align(right)">
-                            <placeName ref="loc_RV">Ravenna</placeName>
+                            <placeName ref="#lRV">Ravenna</placeName>
                             <date when="1918-11-09">9/11/918</date>
                         </dateline>
+                        <!--saluto iniziale-->
                         <salute>
                             <s>
-                                <lb xml:id="lineText-1" facs="#lineText_1" />A voi miei cari
-                                <lb xml:id="lineText-2" facs="#lineText_2" />Eroi!
+                                <lb xml:id="lineText-1-011" facs="#lineText_1_011" />A voi miei cari
+                                <lb xml:id="lineText-2-011" facs="#lineText_2_011" />Eroi!
                             </s>
                             <s> Il mio
-                                <lb xml:id="lineText-3" facs="#lineText_3" />bacio e il
-                                <lb xml:id="lineText-4" facs="#lineText_4" />mio saluto
+                                <lb xml:id="lineText-3-011" facs="#lineText_3_011" />bacio e il
+                                <lb xml:id="lineText-4-011" facs="#lineText_4_011" />mio saluto
                             </s>
                         </salute>
                     </opener>
-                    <!--saluto iniziale-->
                     <!--contenuto del messaggio-->
                     <p> 
-                        <s xml:id="lineText-5" facs="#lineText_5">Evviva la Vittoria!</s>
-                        <s xml:id="lineText-6" facs="#lineText_6">Evviva l'<country>Italia</country>!</s>
+                        <s xml:id="lineText-5-011" facs="#lineText_5_011">Evviva la Vittoria!</s>
+                        <s xml:id="lineText-6-011" facs="#lineText_6_011">Evviva l'<country ref="lIT">Italia</country>!</s>
                     </p>
                     <!--saluto finale e firma-->
-                    <p xml:id="line-vertical" facs="#line_vertical">
+                    <p xml:id="line-vertical-011" facs="#line_vertical_011">
                             <!-- Testo ruotato 90° -->
                             <s type="hand_w" style="writing-mode: vertical-rl; text-orientation: sideways">Mi raccomando quella sola <unclear reason="illegible" agent="ink" cert="medium">XO</unclear></s>
                             <s type="stamp_w" style="writing-mode: vertical-lr; text-orientation: sideways"> 
-                                <orgName key="EFC" type="heliochromy">
+                                <orgName ref="#oEF" type="typography">
                                     Eliocromia 
-                                    <persName>
-                                        <surname>Fumagalli</surname>
-                                    </persName> 
-                                    &amp; C. -
-                                    <placeName key="ML">Milano</placeName>
+                                    <persName ref="#pF">Fumagalli</persName> &amp; C. -
+                                    <placeName ref="#lMI">Milano</placeName>
                                 </orgName>
                             </s>
                     </p>
                     <closer rend="align(right)">
                         <!-- Firma del mittente -->
-                        <lb xml:id="lineText-7" facs="#lineText_7" />Tuo amico
-                        <signed xml:id="lineText-8" facs="lineText_8">
-                            <persName ref="auth_GF">
-                                <forename>Giulio</forename>
-                                    <surname>Fantoni</surname>
-                            </persName>
+                        <lb xml:id="lineText-7-011" facs="#lineText_7_011" />Tuo amico
+                        <signed xml:id="lineText-8-011" facs="#lineText_8_011">
+                            <persName ref="#pGF">Giulio Fantoni</persName>
                         </signed>
                     </closer>
+                </div>
+                <div type="stamp_info">
+                    <ab xml:id="line-1006-011" type="stamp_w" facs="#line_1006_011"><num type="cardinal" value="1006">1006</num></ab>
                 </div>
                 <div type="destination">
                     <div n="1">
@@ -278,45 +272,32 @@
                             <!-- Francobollo -->
                             <stamp type="postage" style="transform:rotateZ(180deg);">
                                 <mentioned style="color:red;">
-                                    <hi>Poste italiane</hi>
-                                    <hi><hi rend="double">10</hi> centesimi <hi rend="double">10</hi></hi>
+                                    <orgName ref="#oPI">Poste italiane</orgName>
+                                    <hi><num rend="double" type="cardinal" value="10">10</num> centesimi <num rend="double" type="cardinal" value="10">10</num></hi>
                                 </mentioned>
                             </stamp>
                         </ab>
                     </div>
                     <div n="2">
                         <p>
+                            <!-- ?????? (1) -->
                             <!--address type="receiver"-->
                             <address>
                                 <!-- Righe della sezione: Destinatario -->
-                                <addrLine xml:id="lineDest-1" facs="lineDest_1">Capitano</addrLine>
-                                <addrLine xml:id="lineDest-2" facs="lineDest_2">
-                                    <persName>
-                                        <surname>Cogliola</surname> 
-                                        <forename>Giovanni</forename>
-                                    </persName>
-                                </addrLine>
-                                <addrLine xml:id="lineDest-3" facs="lineDest_3">11&#176; Gruppo D'Assalto</addrLine>
-                                <addrLine xml:id="lineDest-4" facs="lineDest_4">2&#7491; Divisione</addrLine>
-                                <addrLine xml:id="lineDest-5" facs="lineDest_5">5&#7491; Compagnia</addrLine>
-                                <addrLine xml:id="lineDest-6" facs="lineDest_6">Faro di Guerra</addrLine>
+                                <addrLine xml:id="lineDest-1-011" facs="lineDest_1_011">Capitano</addrLine>
+                                <addrLine xml:id="lineDest-2-011" facs="lineDest_2_011"><persName ref="#pGC"> Cogliola Giovanni</persName></addrLine>
+                                <addrLine xml:id="lineDest-3-011" facs="lineDest_3_011">11&#176; Gruppo D'Assalto</addrLine>
+                                <addrLine xml:id="lineDest-4-011" facs="lineDest_4_011">2&#7491; Divisione</addrLine>
+                                <addrLine xml:id="lineDest-5-011" facs="lineDest_5_011">5&#7491; Compagnia</addrLine>
+                                <addrLine xml:id="lineDest-6-011" facs="lineDest_6_011"><unclear cert="low" reason="calligraphy">Faro</unclear> di Guerra</addrLine>
                             </address>
-                            <add ref="#note_1" cert="medium" hand=""> 11 </add>
+                            <add xml:id="note_1_011" cert="medium"> 
+                                <num  type="cardinal" value="11">11</num>
+                            </add>
                         </p>
                     </div>
                 </div>
             </div>
         </body>
-        <back>
-            <div type="notes">
-                <div type="annotation">
-                    <note xml:id="note_1" resp="#CP #DB #CG">
-                        Si deduce che questo numero (11) possa essere stato aggiunto a priori o posteriori da un soggetto differente dall'autore
-                        <persName ref="#auth_GF">Giulio Fantoni</persName>
-                        , basti guardare l'evidente differenza di stile tra il carattere "1" scritto dall'autore (relativo alla data di scrittura della cartolina) e il carattere "1" della preseunta aggiunta.
-                    </note>
-                </div>
-            </div>
-        </back>
     </text>
 </TEI>
